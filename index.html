@@ -22,7 +22,7 @@
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <!-- Udskift hero-billedets URL med gruppens eget billede, når det er klar. -->
-        <div class="hero-image" aria-hidden="true"></div>
+        <div class="Gruppebillede.png" aria-hidden="true"></div>
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content wrap">
           <p class="eyebrow">Eventyr, fællesskab &amp; friluftsliv</p>
@@ -123,7 +123,7 @@
     </footer>
     <script>
       const units=document.querySelectorAll('.unit');document.querySelectorAll('.unit-toggle').forEach(button=>button.addEventListener('click',()=>{const unit=button.closest('.unit'),open=unit.classList.contains('open');units.forEach(item=>{item.classList.remove('open');item.querySelector('.unit-toggle').setAttribute('aria-expanded','false')});if(!open){unit.classList.add('open');button.setAttribute('aria-expanded','true')}}));
-      const heroImage=document.querySelector('.hero-image');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)window.addEventListener('scroll',()=>{const p=Math.min(scrollY/innerHeight,1);heroImage.style.opacity=1-p*.55;heroImage.style.transform=`scale(${1.03+p*.04}) translateY(${p*7}%)`},{passive:true});
+      const heroImage=document.querySelector('.Gruppebillede.png');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)window.addEventListener('scroll',()=>{const p=Math.min(scrollY/innerHeight,1);heroImage.style.opacity=1-p*.55;heroImage.style.transform=`scale(${1.03+p*.04}) translateY(${p*7}%)`},{passive:true});
     </script>
   </body>
 </html>
