@@ -1,128 +1,630 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bliv spejder hos KFUM-Spejderne i Brejning. Prøv spejderlivet gratis fire gange." />
-    <title>Bliv spejder i Brejning | KFUM-Spejderne</title>
-    <link rel="icon" type="image/svg+xml" href="/icon.svg">
-    <link rel="preconnect" href="https://images.unsplash.com/..." />
-    <style>
-      :root{--green:#1b4332;--dark:#102a20;--cream:#f4f1de;--ink:#2b2d42;--sun:#e9c46a;--white:#fffdf7}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-rounded,"Avenir Next",system-ui,sans-serif;line-height:1.55}.wrap{width:min(1120px,calc(100% - 2rem));margin:auto}.site-header{position:absolute;z-index:5;inset:0 0 auto;display:flex;align-items:center;justify-content:space-between;width:min(1200px,calc(100% - 2rem));margin:auto;padding:1rem 0;color:var(--white)}.brand{display:inline-flex;align-items:center;gap:.55rem;color:inherit;text-decoration:none;font-size:.78rem;line-height:1.2}.brand strong{font-size:1rem}.brand-mark{display:grid;place-items:center;width:2.2rem;height:2.2rem}.kfum-mark{width:2.55rem;height:2.3rem}.kfum-mark img{display:block;width:100%;height:100%;object-fit:contain;filter:brightness(0) invert(1)}.header-cta{padding:.55rem .8rem;border:1px solid #ffffffa6;border-radius:99px;color:inherit;text-decoration:none;font-size:.8rem;font-weight:800}.hero{position:relative;display:grid;align-items:end;min-height:100svh;overflow:hidden;background:var(--green);color:white}.hero-image,.hero-shade{position:absolute;inset:0}.hero-image{background:linear-gradient(0deg,#102a208a,#102a2014),url("Gruppebillede.png") center/cover;transform:scale(1.03)}.hero-shade{background:linear-gradient(0deg,#102a20f5,#102a2070,#102a201f)}.hero-content{position:relative;padding:8.5rem 0 3rem}.eyebrow{margin:0 0 .65rem;color:var(--sun);font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.eyebrow.green{color:#3a6b4e}h1,h2,h3,p{margin-top:0}.hero h1{margin-bottom:.8rem;font-size:clamp(3.2rem,12vw,6.8rem);line-height:.92;letter-spacing:-.065em}.lead{max-width:520px;margin-bottom:1.3rem;font-size:clamp(1rem,3.5vw,1.3rem)}.launch-note{display:flex;gap:.65rem;max-width:500px;margin-bottom:1.55rem;padding:.8rem .9rem;border:1px solid #ffffff42;border-radius:.8rem;background:#fff2;backdrop-filter:blur(5px)}.launch-note p{margin:0;font-size:.84rem}.button{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:.9rem 1.15rem;border-radius:99px;font-weight:800;text-decoration:none;transition:.18s}.button:hover{transform:translateY(-2px);box-shadow:0 8px 18px #0004}.button-sun{background:var(--sun);color:var(--ink)}.section{padding:4.5rem 0}.section-intro{max-width:630px;margin-bottom:2rem}.section-intro h2,.cta-section h2{margin-bottom:.65rem;font-size:clamp(2rem,7vw,3.8rem);line-height:1;letter-spacing:-.05em}.info-grid{display:grid;gap:.8rem}.info-card{padding:1.2rem;border-radius:1.25rem;background:var(--white);box-shadow:0 5px 18px #1b43320f}.icon{display:grid;place-items:center;width:2.4rem;height:2.4rem;margin-bottom:.9rem;border-radius:.75rem;background:#dce9dc;color:var(--green)}.info-card h3{margin-bottom:.35rem;font-size:1.08rem}.info-card p{margin:0;font-size:.93rem}.units-section{background:#e7e3cd}.centered{text-align:center;margin-inline:auto}.accordion{display:grid;gap:.65rem;max-width:850px;margin:auto}.unit{overflow:hidden;border-radius:1rem;background:var(--white);box-shadow:0 4px 14px #1b43320d}.unit-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;padding:1.1rem;border:0;background:transparent;color:var(--ink);font:inherit;text-align:left;cursor:pointer}.unit-toggle small,.unit-toggle strong{display:block}.unit-toggle small{color:#66756c;font-size:.75rem}.unit-toggle strong{font-size:1.15rem}.plus{display:grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:#edf2e9;color:var(--green);font-size:1.45rem;transition:.22s}.unit-content{display:grid;grid-template-rows:0fr;transition:grid-template-rows .28s}.unit-content>div{overflow:hidden;padding:0 1.1rem}.unit-content p{margin:0 0 .55rem;font-size:.92rem}.unit-content .choice{margin-bottom:1.15rem}.unit-content a,.rover-note a{color:var(--green);font-weight:800}.unit.open .unit-content{grid-template-rows:1fr}.unit.open .plus{transform:rotate(45deg);background:var(--sun)}.rover-note{display:grid;gap:.3rem;max-width:650px;margin:1.5rem auto 0;padding:1rem 1.15rem;border:1px solid #c8d6c7;border-radius:1rem;text-align:center;font-size:.88rem}.rover-note strong{color:var(--green)}.cta-section{padding:4.5rem 0;background:var(--green);color:white;text-align:center}.cta-content{max-width:800px}.campfire{display:inline-grid;place-items:center;width:3rem;height:3rem;margin-bottom:1rem;border:1px solid #ffffff73;border-radius:50%;font-size:1.5rem}.cta-section .eyebrow{color:var(--sun)}.button-light{margin-top:1rem;background:white;color:var(--green)}.site-footer{padding:3rem 0 1rem;background:var(--dark);color:#d9e3d8}.footer-grid{display:grid;gap:2rem}.footer-brand{color:white}.site-footer h3{margin-bottom:.55rem;color:var(--sun);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}.site-footer address{font-style:normal;font-size:.9rem}.site-footer a{display:block;margin:.35rem 0;color:#d9e3d8;font-size:.9rem}.footer-bottom{display:flex;justify-content:space-between;gap:1rem;margin-top:2.5rem;padding-top:1rem;border-top:1px solid #d9e3d833;font-size:.75rem}.footer-bottom a{margin:0;color:var(--sun)}@media(min-width:650px){.hero-content{padding-bottom:5rem}.info-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1.2fr 1fr 1.2fr}.section{padding:6rem 0}}@media(min-width:900px){.hero{min-height:800px}.info-grid{grid-template-columns:repeat(4,1fr)}.section{padding:7rem 0}.unit-toggle{padding:1.25rem 1.5rem}.unit-content>div{padding:0 1.5rem}}
-    </style>
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="KFUM-Spejderne i Brejning, til toppen">
-        <span class="brand-mark kfum-mark"><img src="kfum-logo.png" alt="" /></span>
-        <span>KFUM-Spejderne<br /><strong>Brejning</strong></span>
-      </a>
-      <a class="header-cta" href="#tilmelding">Prøv gratis</a>
-    </header>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brejning Gruppe – KFUM-Spejderne</title>
+<meta name="description" content="KFUM-Spejderne i Brejning. Spejder for bæver, ulv, trop, senior og rover. Vi holder til i Liljen, Hammervej 2, Brejning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --spruce:#1e3a2f; --moss:#4f7a45; --leaf:#dcebd5; --sun:#f2c230; --paper:#fbfbf7; --ink:#18241e; --muted:#52615a;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:1.0625rem/1.6 var(--body);color:var(--ink);background:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0}
+h2{font-size:clamp(1.9rem,4vw,2.75rem);font-weight:800;letter-spacing:-.02em}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:1rem;top:1rem;background:var(--sun);padding:.5rem 1rem;z-index:10}
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <!-- Udskift hero-billedets URL med gruppens eget billede, når det er klar. -->
-        <div class="hero-image" aria-hidden="true"></div>
-        <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-content wrap">
-          <p class="eyebrow">Eventyr, fællesskab &amp; friluftsliv</p>
-          <h1 id="hero-title">Bliv spejder<br />i Brejning!</h1>
-          <p class="lead">Vi har plads til dig – kom og prøv spejderlivet helt gratis 4 gange!</
-             <div class="launch-note">
-          </div>
-          <a class="button button-sun" href="#kom-i-gang">Se hvordan du kommer i gang <span aria-hidden="true">↓</span></a>
-        </div>
-      </section>
+/* header */
+header{background:var(--spruce);color:#fff;position:sticky;top:0;z-index:5}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
+.brand{display:flex;align-items:center;gap:.75rem;text-decoration:none;font-family:var(--display);font-weight:700;font-size:1.15rem}
+.brand img{height:34px;width:auto}
+nav ul{display:flex;gap:1.4rem;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;font-weight:700;font-size:.97rem}
+nav a:hover{text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--sun)}
+.menu-btn{display:none;background:none;border:2px solid #fff;color:#fff;border-radius:6px;padding:.35rem .8rem;font:700 .95rem var(--body)}
 
-      <section class="info-section section wrap" id="kom-i-gang" aria-labelledby="info-title">
-        <div class="section-intro">
-          <p class="eyebrow green">Første skridt</p>
-          <h2 id="info-title">Sådan kommer du i gang</h2>
-          <p>Det skal være nemt at starte på spejderlivet. I skal bare komme, som I er.</p>
-        </div>
-        <div class="info-grid">
-          <article class="info-card">
-            <span class="icon" aria-hidden="true">✦</span>
-            <h3>4 gange gratis</h3>
-            <p>Du/I kan være med 4 gange gratis, før I beslutter jer for indmeldelse.</p>
-          </article>
-          <article class="info-card">
-            <span class="icon" aria-hidden="true">⌖</span>
-            <h3>Mødested</h3>
-            <p>Vi mødes i Liljen på <strong>Hammervej 2, Brejning, 7080 Børkop</strong>.</p>
-          </article>
-          <article class="info-card">
-            <span class="icon" aria-hidden="true">👋</span>
-            <h3>Bare mød op</h3>
-            <p>Kom til den mødetid, der passer til alderen. En leder tager imod jer og viser jer til rette.</p>
-          </article>
-          <article class="info-card">
-            <span class="icon" aria-hidden="true">☰</span>
-            <h3>Aktivitetsplan</h3>
-            <p>Lederne planlægger aktiviteterne og udleverer planen i starten af hvert spejderår.</p>
-          </article>
-        </div>
-      </section>
+/* hero */
+.hero{background:var(--spruce);color:#fff;padding:4rem 0 6.5rem;position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(2.8rem,9vw,6.4rem);font-weight:800;letter-spacing:-.035em;max-width:11ch}
+.hero p{max-width:34rem;font-size:1.2rem;color:#d9e6dc;margin:1.25rem 0 2rem}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:.85rem 1.5rem;border-radius:999px;border:2px solid var(--sun)}
+.btn.main{background:var(--sun);color:var(--spruce)}
+.btn.main:hover{background:#fff;border-color:#fff}
+.btn.ghost{color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.trail{position:absolute;right:-4%;bottom:0;width:62%;max-width:760px;opacity:.9}
+.trail path{fill:none;stroke:var(--sun);stroke-width:3;stroke-dasharray:2 12;stroke-linecap:round}
+.trail .hill{fill:#2a4d3e;stroke:none}
+.trail .hill2{fill:#356150;stroke:none}
 
-      <section class="units-section section" id="enheder" aria-labelledby="units-title">
-        <div class="wrap">
-          <div class="section-intro centered">
-            <p class="eyebrow green">Én plads til alle</p>
-            <h2 id="units-title">Find din aldersgruppe</h2>
-            <p>Tryk på en gruppe og se, hvornår den mødes.</p>
-          </div>
-          <div class="accordion" data-accordion>
-            <article class="unit unit-beaver">
-              <button class="unit-toggle" aria-expanded="false" aria-controls="beaver-content" id="beaver-button">
-                <span><small>0. kl. – 1. kl.</small><strong>Bæverflokken</strong></span><span class="plus" aria-hidden="true">+</span>
-              </button>
-              <div class="unit-content" id="beaver-content" role="region" aria-labelledby="beaver-button"><div><p><strong>Hver tirsdag kl. 17:00 – 18:30</strong> i Liljen.</p><p>Husk tøj, der kan tåle at blive beskidt – vi er meget ude.</p><p>Meld afbud til enhedslederen: <a href="tel:+4525188307">Michael Rahbek · 25 18 83 07</a>.</p><p class="choice">Ved indmeldelse: Vælg <strong>“Bævere”</strong>.</p></div></div>
-            </article>
-            <article class="unit unit-wolf">
-              <button class="unit-toggle" aria-expanded="false" aria-controls="wolf-content" id="wolf-button">
-                <span><small>2. kl. – 4. kl.</small><strong>Ulveflokken</strong></span><span class="plus" aria-hidden="true">+</span>
-              </button>
-              <div class="unit-content" id="wolf-content" role="region" aria-labelledby="wolf-button"><div><p><strong>Hver tirsdag kl. 18:00 – 19:30</strong> i Liljen.</p><p>Husk tøj, der kan tåle at blive beskidt – vi er meget ude.</p><p>Meld afbud til enhedslederen: <a href="tel:+4540924824">Marianne Sørensen · 40 92 48 24</a>.</p><p class="choice">Ved indmeldelse: Vælg <strong>“Ulve”</strong>.</p></div></div>
-            </article>
-            <article class="unit unit-scout">
-              <button class="unit-toggle" aria-expanded="false" aria-controls="scout-content" id="scout-button">
-                <span><small>5. kl. – 7. kl.</small><strong>Troppen</strong></span><span class="plus" aria-hidden="true">+</span>
-              </button>
-              <div class="unit-content" id="scout-content" role="region" aria-labelledby="scout-button"><div><p><strong>Hver tirsdag kl. 18:30 – 20:30</strong> i Liljen, Gårslev Spejderhus eller Kragereden.</p><p>Kører sammen med Gårslev.</p><p>Enhedsleder: <a href="tel:+4540596947">Brian · 40 59 69 47</a>.</p><p class="choice">Ved indmeldelse: Vælg <strong>“Spejdere”</strong>.</p></div></div>
-            </article>
-            <article class="unit unit-senior">
-              <button class="unit-toggle" aria-expanded="false" aria-controls="senior-content" id="senior-button">
-                <span><small>8. kl. og op</small><strong>Senior</strong></span><span class="plus" aria-hidden="true">+</span>
-              </button>
-              <div class="unit-content" id="senior-content" role="region" aria-labelledby="senior-button"><div><p><strong>Hver tirsdag kl. 18:30 – 20:30</strong> i Liljen.</p><p>Senior- og spejdertroppen er sammen på mødeaftenerne.</p><p>Kører sammen med Gårslev.</p><p class="choice">Ved indmeldelse: Vælg <strong>“Senior Trop”</strong>.</p></div></div>
-            </article>
-          </div>
-          <aside class="rover-note"><strong>Roverklanen · Den Kellerske Klan</strong><span>For de ældste spejdere. Klanen holder som udgangspunkt klanmøde cirka én gang om måneden.</span><a href="https://brejningspejder.dk/enhederne/roverklanen/" target="_blank" rel="noopener noreferrer">Læs om Roverklanen <span aria-hidden="true">↗</span></a></aside>
-        </div>
-      </section>
+/* units */
+section{padding:4.5rem 0}
+.intro{max-width:36rem;color:var(--muted);margin:.8rem 0 2.5rem}
+.units{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.unit a{display:flex;flex-direction:column;height:100%;text-decoration:none;background:var(--leaf);border-radius:18px 18px 18px 4px;padding:1.4rem 1.25rem;transition:transform .15s,background .15s}
+.unit a:hover{background:var(--sun);transform:translateY(-3px)}
+.unit h3{font-size:1.7rem;font-weight:800;color:var(--spruce)}
+.unit .age{font-weight:700;margin:.35rem 0 .6rem}
+.unit .time{font-size:.95rem;color:var(--muted);margin-top:auto}
+.unit a:hover .time{color:var(--ink)}
 
-      <section class="cta-section" id="tilmelding" aria-labelledby="cta-title">
-        <div class="wrap cta-content">
-          <span class="campfire" aria-hidden="true">♨</span>
-          <p class="eyebrow">Klar til næste skridt?</p>
-          <h2 id="cta-title">Har du været med 4 gange og er klar til at blive en fast del af fællesskabet?</h2>
-          <a class="button button-light" href="https://medlemsservice.spejdernet.dk/member/signup/member/2237" target="_blank" rel="noopener noreferrer">Tilmeld dig her <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
-    </main>
+/* news */
+.news{background:var(--leaf)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap;margin-bottom:2rem}
+.more{font-weight:700;text-underline-offset:5px}
+.posts{display:grid;grid-template-columns:1.4fr 1fr;gap:1.25rem}
+.post{background:#fff;border-radius:6px 20px 6px 20px;padding:1.5rem;text-decoration:none;display:block}
+.post:hover h3{text-decoration:underline;text-underline-offset:4px}
+.post.big{grid-row:span 3;background:var(--spruce);color:#fff;padding:2rem}
+.post.big h3{font-size:2rem}
+.post h3{font-size:1.3rem;font-weight:700;margin-bottom:.5rem}
+.post p{margin:0;color:var(--muted)}
+.post.big p{color:#d9e6dc}
 
-    <footer class="site-footer">
-      <div class="wrap footer-grid">
-        <div><a class="brand footer-brand" href="#top"><span class="brand-mark kfum-mark"><img src="kfum-logo.png" alt="" /></span><span>KFUM-Spejderne<br /><strong>Brejning</strong></span></a></div>
-        <div><h3>Kontakt</h3><address>Liljen<br />Hammervej 2, Brejning<br />7080 Børkop</address></div>
-        <div><h3>Links</h3><a href="https://brejningspejder.dk/" target="_blank" rel="noopener noreferrer">Besøg spejdernes officielle gruppeside <span aria-hidden="true">↗</span></a><a href="https://medlemsservice.spejdernet.dk/member/signup/member/2237" target="_blank" rel="noopener noreferrer">Indmeldelsesformular <span aria-hidden="true">↗</span></a><a href="https://www.facebook.com/KFUM-Spejderne-Brejning-112476890446141" target="_blank" rel="noopener noreferrer">Følg os på Facebook <span aria-hidden="true">↗</span></a></div>
+/* calendar + find us */
+.two{display:grid;grid-template-columns:1fr 1.2fr;gap:3rem;align-items:start}
+.empty{border:2px dashed var(--moss);border-radius:14px;padding:1.5rem;margin-top:1.5rem}
+.empty strong{display:block;font-family:var(--display);font-size:1.2rem;margin-bottom:.3rem}
+address{font-style:normal;margin:1rem 0 1.5rem}
+.map{border:0;width:100%;height:340px;border-radius:18px 4px 18px 4px;background:var(--leaf)}
+
+/* join */
+.join{background:var(--sun);color:var(--spruce);text-align:center}
+.join h2{max-width:20ch;margin:0 auto 1rem}
+.join p{max-width:34rem;margin:0 auto 1.8rem}
+.join .btn{background:var(--spruce);border-color:var(--spruce);color:#fff;margin:.25rem}
+.join .btn.alt{background:transparent;color:var(--spruce)}
+
+/* footer */
+footer{background:var(--spruce);color:#d9e6dc;padding:3rem 0 2rem}
+.cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+footer h3{color:#fff;font-size:1.1rem;margin-bottom:.7rem}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin:.3rem 0}
+footer a{text-underline-offset:4px}
+.small{font-size:.9rem;margin-top:2rem;padding-top:1rem;border-top:1px solid #35574a}
+
+
+/* unit finder */
+.finder{margin-top:2rem;background:var(--spruce);color:#fff;border-radius:20px 4px 20px 4px;padding:1.75rem;display:flex;flex-wrap:wrap;align-items:flex-end;gap:1rem 1.5rem}
+.finder h3{flex:1 1 100%;font-size:1.5rem}
+.finder label{display:block;font-weight:700;margin-bottom:.3rem}
+.finder select,.form input,.form textarea{width:100%;font:inherit;padding:.7rem .9rem;border-radius:10px;border:2px solid #b9cdbd;background:#fff;color:var(--ink)}
+.finder select{width:22rem;max-width:100%}
+.finder output{flex:1 1 16rem;background:var(--sun);color:var(--spruce);border-radius:12px;padding:.8rem 1rem;font-weight:700}.finder output:empty{display:none}.finder output a{color:var(--spruce)}
+
+.unit.match a{background:var(--sun);outline:4px solid var(--spruce);outline-offset:3px}
+
+/* faq */
+.faq{background:#fff}
+.faq details{border-bottom:2px solid var(--leaf);padding:1.1rem 0;max-width:46rem}
+.faq summary{font:700 1.2rem var(--display);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.6rem;line-height:1;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:.7rem 0 0;color:var(--muted)}
+
+/* form */
+.form{display:grid;gap:1rem;max-width:36rem}
+.form label{font-weight:700;display:block;margin-bottom:.3rem}
+.form textarea{min-height:130px;resize:vertical}
+.form .err{color:#a32117;font-size:.92rem;min-height:1.2em;margin:.2rem 0 0}
+.form input[aria-invalid="true"],.form textarea[aria-invalid="true"]{border-color:#a32117}
+.form .count{font-size:.88rem;color:var(--muted);text-align:right}
+.form button{justify-self:start;cursor:pointer;font:700 1rem var(--body);background:var(--spruce);color:#fff;border:0;border-radius:999px;padding:.9rem 1.8rem}
+.form button:hover{background:var(--moss)}
+.ok{background:var(--leaf);border-radius:12px;padding:1rem 1.2rem;font-weight:700}
+
+
+/* animation */
+.leaf{position:absolute;top:-30px;width:13px;height:21px;background:var(--moss);border-radius:0 100% 0 100%;opacity:.75;animation:fall linear infinite}
+@keyframes fall{to{transform:translate(60px,620px) rotate(320deg)}}
+.hero h1{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.hero p,.hero .btns{animation:rise .9s .25s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+.trail path:nth-of-type(3){animation:march 5s linear infinite}
+@keyframes march{to{stroke-dashoffset:-140}}
+.trail circle{animation:pulse 2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes pulse{50%{transform:scale(1.5)}}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+.js .reveal.in{opacity:1;transform:none}
+
+/* unit explorer */
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
+.tabs button{cursor:pointer;font:700 1.05rem var(--display);padding:.6rem 1.1rem;border-radius:999px;border:2px solid var(--spruce);background:#fff;color:var(--spruce);display:flex;flex-direction:column;align-items:flex-start;line-height:1.2}
+.tabs small{font:400 .8rem var(--body)}
+.tabs button:hover{background:var(--leaf)}
+.tabs button[aria-selected="true"]{background:var(--spruce);color:#fff}
+.panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);background:var(--bg);border-radius:24px 6px 24px 6px;overflow:hidden;animation:rise .45s both}
+.panel[hidden]{display:none}
+.stage{display:grid;place-items:center;padding:1.5rem;background:rgba(255,255,255,.45)}
+.stage svg{width:100%;max-width:340px;height:auto}
+.info{padding:2rem}
+.info h3{font-size:2rem;font-weight:800;color:var(--spruce)}
+.info .lead{font-weight:700;margin:.5rem 0}
+.facts{margin:1.2rem 0 1.5rem;display:grid;gap:.6rem}
+.facts div{display:grid;grid-template-columns:5.5rem 1fr;gap:.8rem;border-top:2px solid rgba(30,58,47,.18);padding-top:.6rem}
+.facts dt{font-weight:700}
+.facts dd{margin:0}
+.tail{transform-origin:78px 142px;animation:wag 2.2s ease-in-out infinite}
+@keyframes wag{50%{transform:rotate(-16deg)}}
+.eye{transform-box:fill-box;transform-origin:center;animation:blink 4s infinite}
+@keyframes blink{94%,100%{transform:scaleY(1)}97%{transform:scaleY(.1)}}
+.moon{transform-box:fill-box;transform-origin:center;animation:pulse 3.5s ease-in-out infinite}
+.star{animation:tw 2s ease-in-out infinite}.star.s2{animation-delay:-1s}
+@keyframes tw{50%{opacity:.2}}
+.ear{transform-box:fill-box;transform-origin:bottom center;animation:twitch 5s infinite}
+@keyframes twitch{90%,100%{transform:rotate(0)}93%{transform:rotate(-14deg)}96%{transform:rotate(6deg)}}
+.flame{transform-box:fill-box;transform-origin:bottom center;animation:flick .5s ease-in-out infinite alternate}
+.flame.f2{animation-duration:.35s}
+@keyframes flick{to{transform:scale(.88,1.12) skewX(5deg)}}
+.flag{transform-box:fill-box;transform-origin:left center;animation:wave 1.6s ease-in-out infinite}
+@keyframes wave{50%{transform:skewY(10deg) scaleX(.85)}}
+.needle{transform-origin:120px 100px;animation:swing 4s ease-in-out infinite}
+@keyframes swing{0%,100%{transform:rotate(-28deg)}50%{transform:rotate(32deg)}}
+.trailp{animation:march 4s linear infinite}
+
+/* kalender */
+.ev{display:grid;grid-template-columns:4.5rem 1fr;gap:1rem;background:#fff;border:2px solid var(--leaf);border-radius:6px 18px 6px 18px;padding:1rem 1.2rem;margin:0 0 1rem}
+.ev .dt{background:var(--spruce);color:#fff;border-radius:12px;text-align:center;padding:.5rem 0;font-family:var(--display);line-height:1.1;align-self:start}
+.ev .dt b{display:block;font-size:1.8rem;font-weight:800}
+.ev h3{font-size:1.2rem;font-weight:700}
+.ev .meta{color:var(--muted);font-size:.95rem;margin:.2rem 0}
+.ev details summary{cursor:pointer;font-weight:700;margin-top:.5rem}
+.ev details p{white-space:pre-line;margin:.6rem 0 0}
+/* personer */
+.gh{font-size:1.4rem;margin:2rem 0 .8rem}
+.people{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem}
+.person{display:flex;gap:.9rem;align-items:center;background:var(--leaf);border-radius:6px 18px 6px 18px;padding:1rem 1.1rem}
+.person strong{font:800 1.05rem var(--display);display:block;line-height:1.2}
+.person span{color:var(--muted);font-size:.95rem}
+.person a{font-size:.92rem;word-break:break-all}
+.av{flex:none;width:2.8rem;height:2.8rem;border-radius:50%;background:var(--spruce);color:#fff;display:grid;place-items:center;font:700 1rem var(--display);font-style:normal}
+/* dropdown */
+nav .sub{position:relative}
+nav .sub ul{display:none;position:absolute;top:100%;left:-1rem;flex-direction:column;gap:.1rem;min-width:11rem;padding:.6rem 1rem;background:var(--spruce);border-radius:0 0 12px 12px;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+nav .sub:hover ul,nav .sub:focus-within ul{display:flex}
+@media (max-width:860px){
+  nav .sub ul{display:flex;position:static;padding:0 0 0 1rem;box-shadow:none;min-width:0}
+  .panel{grid-template-columns:1fr}
+  .info{padding:1.4rem}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.js .reveal{opacity:1;transform:none}}
+@media (max-width:860px){
+  .menu-btn{display:block}
+  nav{display:none;width:100%}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:.2rem;padding:.5rem 0 1rem}
+  nav a{display:block;padding:.5rem 0}
+  .bar{flex-wrap:wrap}
+  .trail{width:100%;opacity:.5}
+  .posts,.two,.cols{grid-template-columns:1fr}
+  .post.big{grid-row:auto}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.pagehead{background:var(--spruce);color:#fff;padding:3rem 0}
+.pagehead h1{font-size:clamp(2.2rem,6vw,4rem);font-weight:800;letter-spacing:-.03em}
+.pagehead p{color:#d9e6dc;max-width:36rem;margin:.8rem 0 0}
+.prose{max-width:44rem}.prose h2{font-size:1.6rem;margin:2.2rem 0 .5rem}.prose p,.prose li{margin:.6rem 0}
+.back{display:inline-block;margin-bottom:1.5rem;font-weight:700}
+.date{color:var(--muted);font-size:.95rem}
+.posts.one{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.box{background:var(--leaf);border-radius:14px;padding:1.2rem 1.4rem;margin:1.5rem 0}
+@media (max-width:860px){.panel{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#indhold">Spring til indhold</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#forside"><img src="https://brejningspejder.dk/wp-content/uploads/2025/05/kfumspejder_logopart_w.svg" alt="">Brejning Gruppe</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="hovedmenu">Menu</button>
+    <nav id="hovedmenu" aria-label="Hovedmenu">
+      <ul>
+        <li><a href="#bliv-spejder">Bliv spejder</a></li>
+        <li><a href="#bliv-leder">Bliv leder</a></li>
+        <li class="sub"><a href="#enheder">Enheder</a><ul><li><a href="#baevere">Bæver</a></li><li><a href="#ulvene">Ulv</a></li><li><a href="#troppen">Trop</a></li><li><a href="#seniorer">Senior</a></li><li><a href="#rovere">Rover</a></li></ul></li>
+        <li><a href="#kalender">Kalender</a></li>
+        <li><a href="#nyheder">Nyheder</a></li>
+        <li><a href="#om-os">Om os</a></li>
+          <li><a href="#samvaersregler">Samværsregler</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main data-page="forside">
+  <div class="hero">
+    <span class="leaf" style="left:8%;animation-duration:11s;animation-delay:-2s"></span><span class="leaf" style="left:24%;animation-duration:14s;animation-delay:-7s"></span><span class="leaf" style="left:41%;animation-duration:10s;animation-delay:-4s"></span><span class="leaf" style="left:58%;animation-duration:13s;animation-delay:-9s"></span><span class="leaf" style="left:74%;animation-duration:12s;animation-delay:-1s"></span><span class="leaf" style="left:90%;animation-duration:15s;animation-delay:-6s"></span>
+    <div class="wrap">
+      <h1>Velkommen hos Brejning Gruppe</h1>
+      <p>KFUM-Spejderne i Brejning. Ture, bål, venner og nye udfordringer for børn og unge fra 0. klasse og op.</p>
+      <div class="btns">
+        <a class="btn main" href="https://medlemsservice.spejdernet.dk/member/signup/member/2237" target="_blank" rel="noopener">Meld dig til</a>
+        <a class="btn ghost" href="#kalender">Se kommende arrangementer</a>
       </div>
-      <div class="wrap footer-bottom"><span>© 2026 KFUM-Spejderne i Brejning</span><a href="#top">Til toppen ↑</a></div>
-    </footer>
-    <script>
-      const units=document.querySelectorAll('.unit');document.querySelectorAll('.unit-toggle').forEach(button=>button.addEventListener('click',()=>{const unit=button.closest('.unit'),open=unit.classList.contains('open');units.forEach(item=>{item.classList.remove('open');item.querySelector('.unit-toggle').setAttribute('aria-expanded','false')});if(!open){unit.classList.add('open');button.setAttribute('aria-expanded','true')}}));
-      const heroImage=document.querySelector('.hero-image');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)window.addEventListener('scroll',()=>{const p=Math.min(scrollY/innerHeight,1);heroImage.style.opacity=1-p*.55;heroImage.style.transform=`scale(${1.03+p*.04}) translateY(${p*7}%)`},{passive:true});
-    </script>
-  </body>
+    </div>
+    <svg class="trail" viewBox="0 0 760 360" aria-hidden="true">
+      <path class="hill" d="M0 360V250C120 170 220 210 330 160S560 90 760 180V360Z"/>
+      <path class="hill2" d="M120 360V290C230 230 340 280 460 230S640 190 760 240V360Z"/>
+      <path d="M40 330C150 300 190 250 290 250S420 300 520 230 640 120 730 70"/>
+      <circle cx="730" cy="70" r="9" fill="#f2c230"/>
+    </svg>
+  </div>
+
+  <section id="enheder">
+    <div class="wrap">
+      <h2>Find din enhed</h2>
+      <p class="intro">Vi tilbyder spejder til mange aldre. Vælg den enhed, der passer til dig eller dit barn.</p>
+      <div class="explore reveal"><div class="tabs" role="tablist" aria-label="Vælg enhed"><button role="tab" id="t-baevere" aria-controls="p-baevere" aria-selected="true" tabindex="0">Bæver<small>0.–1. klasse</small></button><button role="tab" id="t-ulvene" aria-controls="p-ulvene" aria-selected="false" tabindex="-1">Ulv<small>2.–4. klasse</small></button><button role="tab" id="t-troppen" aria-controls="p-troppen" aria-selected="false" tabindex="-1">Trop<small>5.–7. klasse</small></button><button role="tab" id="t-seniorer" aria-controls="p-seniorer" aria-selected="false" tabindex="-1">Senior<small>8. klasse–17 år</small></button><button role="tab" id="t-rovere" aria-controls="p-rovere" aria-selected="false" tabindex="-1">Rover<small>17+ år</small></button></div>
+<div class="panel" role="tabpanel" id="p-baevere" aria-labelledby="t-baevere" style="--bg:#f3e2c8"><div class="stage"><svg viewBox="0 0 240 200" role="img" aria-label="Tegning af en bæver"><path d="M10 178h220" stroke="#8a5a2b" stroke-width="4" stroke-linecap="round"/><g class="tail"><ellipse cx="52" cy="142" rx="36" ry="15" fill="#5b3a1a"/><path d="M30 142h44M40 133l8 18M56 132l8 20" stroke="#8a5a2b" stroke-width="2"/></g><ellipse cx="112" cy="132" rx="55" ry="44" fill="#8a5a2b"/><ellipse cx="122" cy="146" rx="30" ry="26" fill="#d9b88a"/><circle cx="150" cy="88" r="34" fill="#9c6a37"/><circle cx="128" cy="60" r="10" fill="#6d4521"/><circle cx="172" cy="60" r="10" fill="#6d4521"/><circle class="eye" cx="140" cy="84" r="4.5" fill="#18241e"/><circle class="eye" cx="162" cy="84" r="4.5" fill="#18241e"/><ellipse cx="151" cy="98" rx="8" ry="5" fill="#18241e"/><rect x="146" y="102" width="10" height="12" rx="2" fill="#fff"/><rect x="150" y="150" width="76" height="28" rx="14" fill="#b98b52"/><circle cx="226" cy="164" r="14" fill="#d9b88a"/></svg></div><div class="info"><h3>Velkommen til bæverdammen</h3><p class="lead">Bæverne får nye venner, nye færdigheder og udfordrer deres nysgerrighed.</p><p>Her leger, arbejder og holder man sammen. Bæverne lærer gennem leg at være en god ved, ringe 1-1-2, binde knob og passe på dyrene og naturen. De tager også på weekendture og sommerlejr.</p><dl class="facts"><div><dt>Alder</dt><dd>Man skal være startet i 0. eller 1. klasse ved spejderårets start i september</dd></div><div><dt>Møder</dt><dd>Tirsdag 17.00–18.30</dd></div><div><dt>Sted</dt><dd>Oftest spejderhuset Liljen, Hammervej 2</dd></div><div><dt>Leder</dt><dd>Michael Rahbek, 25 18 83 07</dd></div></dl><a class="btn main" href="#baevere">Læs mere om bæverne</a></div></div>
+<div class="panel" role="tabpanel" id="p-ulvene" aria-labelledby="t-ulvene" style="--bg:#dbe5ee" hidden><div class="stage"><svg viewBox="0 0 240 200" role="img" aria-label="Tegning af en ulv der hyler mod månen"><circle class="moon" cx="190" cy="48" r="30" fill="#f6e7a1"/><circle class="star" cx="40" cy="40" r="3" fill="#fff"/><circle class="star s2" cx="80" cy="25" r="2.5" fill="#fff"/><circle class="star" cx="25" cy="90" r="2" fill="#fff"/><path d="M60 165L62 95L82 50L104 88H136L158 50L178 95L180 165Q120 198 60 165Z" fill="#6f8196"/><path class="ear" d="M70 92L83 62L97 90Z" fill="#c9d4df"/><path d="M170 92L157 62L143 90Z" fill="#c9d4df"/><circle class="eye" cx="98" cy="122" r="5.5" fill="#18241e"/><circle class="eye" cx="142" cy="122" r="5.5" fill="#18241e"/><ellipse cx="120" cy="152" rx="26" ry="19" fill="#c9d4df"/><ellipse cx="120" cy="143" rx="9" ry="6" fill="#18241e"/><path d="M120 149v10M108 162q12 8 24 0" stroke="#18241e" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div><div class="info"><h3>Ulvene</h3><p class="lead">Enheden for børn i 2.–4. klasse.</p><p>Læs om ulvenes møder, ledere og ture på enhedens side.</p><dl class="facts"><div><dt>Alder</dt><dd>2.–4. klasse</dd></div><div><dt>Møder</dt><dd>Tirsdag 18.00–19.30</dd></div><div><dt>Sted</dt><dd>Spejderhuset Liljen, Hammervej 2</dd></div></dl><a class="btn main" href="#ulvene">Læs mere om ulvene</a></div></div>
+<div class="panel" role="tabpanel" id="p-troppen" aria-labelledby="t-troppen" style="--bg:#d6e9dd" hidden><div class="stage"><svg viewBox="0 0 240 200" role="img" aria-label="Tegning af et telt og et bål"><circle class="star" cx="170" cy="30" r="3" fill="#2f6b4f"/><path d="M10 178h220" stroke="#2f6b4f" stroke-width="4" stroke-linecap="round"/><path d="M20 176L90 60L160 176Z" fill="#2f6b4f"/><path d="M76 176L90 112L104 176Z" fill="#1c3f2f"/><path d="M90 60V34" stroke="#18241e" stroke-width="3"/><path class="flag" d="M90 34l26 8-26 8Z" fill="#f2c230"/><path d="M178 176l44-12M222 176l-44-12" stroke="#5b3a1a" stroke-width="7" stroke-linecap="round"/><path class="flame" d="M200 170C182 150 194 138 200 112C206 138 218 150 200 170Z" fill="#f08a24"/><path class="flame f2" d="M200 168C192 156 197 148 200 136C203 148 208 156 200 168Z" fill="#f2c230"/></svg></div><div class="info"><h3>Troppen</h3><p class="lead">Enheden for børn i 5.–7. klasse.</p><p>Læs om troppens program, ledere og ture på enhedens side.</p><dl class="facts"><div><dt>Alder</dt><dd>5.–7. klasse</dd></div><div><dt>Møder</dt><dd>Tirsdag eller onsdag 18.30–20.30, efter program</dd></div><div><dt>Sted</dt><dd>Spejderhuset Liljen, Hammervej 2</dd></div></dl><a class="btn main" href="#troppen">Læs mere om troppen</a></div></div>
+<div class="panel" role="tabpanel" id="p-seniorer" aria-labelledby="t-seniorer" style="--bg:#f6dcd3" hidden><div class="stage"><svg viewBox="0 0 240 200" role="img" aria-label="Tegning af et kompas"><circle cx="120" cy="100" r="74" fill="#fff" stroke="#1e3a2f" stroke-width="8"/><circle cx="120" cy="100" r="60" fill="none" stroke="#dcebd5" stroke-width="2" stroke-dasharray="3 8"/><text x="120" y="52" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#1e3a2f">N</text><text x="120" y="160" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#1e3a2f">S</text><text x="182" y="106" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#1e3a2f">Ø</text><text x="58" y="106" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#1e3a2f">V</text><g class="needle"><path d="M120 62L131 100H109Z" fill="#c4452e"/><path d="M120 138L131 100H109Z" fill="#8b98a0"/></g><circle cx="120" cy="100" r="6" fill="#1e3a2f"/></svg></div><div class="info"><h3>Seniorerne</h3><p class="lead">Enheden for 8. klasse og op til 17 år.</p><p>Læs om seniorernes program, ledere og ture på enhedens side.</p><dl class="facts"><div><dt>Alder</dt><dd>8. klasse til 17 år</dd></div><div><dt>Møder</dt><dd>Tirsdag eller onsdag 18.30–20.30, efter program</dd></div><div><dt>Sted</dt><dd>Spejderhuset Liljen, Hammervej 2</dd></div></dl><a class="btn main" href="#seniorer">Læs mere om seniorerne</a></div></div>
+<div class="panel" role="tabpanel" id="p-rovere" aria-labelledby="t-rovere" style="--bg:#e6dff0" hidden><div class="stage"><svg viewBox="0 0 240 200" role="img" aria-label="Tegning af et bjerg med et flag"><circle class="moon" cx="198" cy="42" r="20" fill="#f2c230"/><path d="M6 180L100 62L158 132L188 98L238 180Z" fill="#6a4c93"/><path d="M100 62l-20 24 12-6 8 10 8-10 12 6Z" fill="#fff"/><path d="M100 62V28" stroke="#18241e" stroke-width="3"/><path class="flag" d="M100 28l30 9-30 9Z" fill="#c4452e"/><path class="trailp" d="M30 180C70 165 60 140 100 135S150 150 180 178" fill="none" stroke="#f2c230" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/></svg></div><div class="info"><h3>Roverne</h3><p class="lead">Enheden for dig på 17 år eller ældre.</p><p>Læs om roverklanen og dens møder på enhedens side.</p><dl class="facts"><div><dt>Alder</dt><dd>17 år eller ældre</dd></div><div><dt>Møder</dt><dd>Klanmøde ca. én gang om måneden</dd></div><div><dt>Sted</dt><dd>Spejderhuset Liljen, Hammervej 2</dd></div></dl><a class="btn main" href="#rovere">Læs mere om roverne</a></div></div>
+</div>
+    </div>
+  </section>
+
+  <section class="news" aria-labelledby="aktuelt">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="aktuelt">Aktuelt</h2>
+        <a class="more" href="#nyheder">Se alle nyheder</a>
+      </div>
+      <div class="posts">
+        <a class="post big" href="#stoet-kfum-spejderne-i-brejning-hver-gang-du-tanker">
+          <h3>Støt KFUM-Spejderne i Brejning, hver gang du tanker</h3>
+          <p>Vi har en sponsoraftale med OK. Du støtter os med 5 øre pr. liter, uanset om du bruger et OK Kort eller OK-appen. Det koster dig ikke ekstra, OK betaler hele beløbet.</p>
+        </a>
+        <a class="post" href="#spejderkurser-en-guide-til-dig-som-foraelder">
+          <h3>Spejderkurser: en guide til dig som forælder</h3>
+          <p>Når dit barn begynder til spejder, åbner der sig en verden af oplevelser og fællesskab.</p>
+        </a>
+        <a class="post" href="#pak-til-lejr">
+          <h3>Pak til spejderlejr</h3>
+          <p>Hvad skal dit barn have med? Find pakkelisten til både nye og garvede lejrdeltagere.</p>
+        </a>
+        <a class="post" href="#find-din-uniform-hos-eventyrsport">
+          <h3>Køb dit grej hos Eventyrsport</h3>
+          <p>Uniformer, skjorter og udstyr i 16 butikker rundt om i landet.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="two-wrap">
+    <div class="wrap two">
+      <div>
+        <h2>Kalender</h2>
+        <p class="intro" style="margin-bottom:0">Kommende arrangementer hos Brejning Gruppe.</p>
+        <div class="events" data-limit="3" aria-live="polite">Henter arrangementer…</div>
+        <p><a class="more" href="#kalender">Se den fulde kalender</a></p>
+        <h2 style="margin-top:3rem">Find os</h2>
+        <address>
+          <strong>Spejderhuset Liljen</strong><br>
+          Hammervej 2<br>
+          7080 Børkop
+        </address>
+        <a class="more" href="#om-os">Mere om os</a>
+      </div>
+      <iframe class="map" title="Kort over Liljen, Hammervej 2, Brejning" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1564.0426970247017!2d9.677164983908478!3d55.66197583222052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c853d8b5fd99b%3A0x22542e2cdde3aa80!2sKfum%20Spejderne%20Brejning!5e0!3m2!1sda!2sdk!4v1790950693969!5m2!1sda!2sdk"></iframe>
+    </div>
+  </section>
+
+  <section class="faq" aria-labelledby="faqh">
+    <div class="wrap">
+      <h2 id="faqh" style="margin-bottom:1.5rem">Værd at vide</h2>
+      <details><summary>Hvor mødes vi?</summary><p>Vi holder til i spejderhuset Liljen, Hammervej 2, 7080 Børkop.</p></details>
+      <details><summary>Hvornår er der spejder?</summary><p>Bæver, ulv, trop og senior mødes tirsdag eller onsdag aften. Tiderne står ved hver enhed her på siden. Rovere holder klanmøde ca. én gang om måneden.</p></details>
+      <details><summary>Hvad skal mit barn have med på lejr?</summary><p>Vi har lavet en pakkeguide til både nye og garvede lejrdeltagere. Find den under Nyheder: Pak til spejderlejr.</p></details>
+      <details><summary>Hvor køber jeg uniform?</summary><p>Uniformer, skjorter og udstyr kan købes i Eventyrsports 16 butikker rundt om i landet.</p></details>
+      <details><summary>Kan jeg hjælpe som forælder?</summary><p>Ja. Vi søger flere ledere, og du behøver ikke have prøvet det før. Læs mere under Bliv leder.</p></details>
+      <details><summary>Hvordan støtter jeg gruppen?</summary><p>Via vores sponsoraftale med OK giver hver tanket liter 5 øre til KFUM-Spejderne i Brejning. Det koster dig ikke ekstra.</p></details>
+    </div>
+  </section>
+
+  <section id="kontakt-os">
+    <div class="wrap two">
+      <div>
+        <h2>Skriv til os</h2>
+        <p class="intro">Har du et spørgsmål om spejder, eller vil du høre mere om at blive leder? Skriv her, så åbner din mailapp med beskeden klar.</p>
+      </div>
+      <form class="form" id="kform" novalidate>
+        <div><label for="navn">Dit navn</label><input id="navn" autocomplete="name" required><p class="err" id="e-navn"></p></div>
+        <div><label for="mail">Din e-mail</label><input id="mail" type="email" autocomplete="email" required><p class="err" id="e-mail"></p></div>
+        <div><label for="besked">Besked</label><textarea id="besked" maxlength="600" required></textarea><div class="count" id="tael">0 / 600</div><p class="err" id="e-besked"></p></div>
+        <button type="submit">Send besked</button>
+        <div id="kvit" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="join">
+    <div class="wrap">
+      <h2>Vil du med på tur?</h2>
+      <p>Tilmeld dig som spejder, eller bliv leder og giv næste generation gode oplevelser. Vi søger flere ledere.</p>
+      <a class="btn" href="https://medlemsservice.spejdernet.dk/member/signup/member/2237" target="_blank" rel="noopener">Meld dig til</a>
+      <a class="btn alt" href="#bliv-spejder">Læs mere om at blive spejder</a>
+      <a class="btn alt" href="#bliv-leder">Bliv leder</a>
+    </div>
+  </section>
+</main>
+<main data-page="baevere" hidden>
+<div class="pagehead"><div class="wrap"><h1>Bævere</h1><p>Én af enhederne i Brejning Gruppe.</p></div></div>
+<section><div class="wrap"><a class="back" href="#enheder">← Alle enheder</a><div class="panel" style="--bg:#f3e2c8"><div class="stage"><svg viewBox="0 0 240 200" role="img" aria-label="Tegning af en bæver"><path d="M10 178h220" stroke="#8a5a2b" stroke-width="4" stroke-linecap="round"/><g class="tail"><ellipse cx="52" cy="142" rx="36" ry="15" fill="#5b3a1a"/><path d="M30 142h44M40 133l8 18M56 132l8 20" stroke="#8a5a2b" stroke-width="2"/></g><ellipse cx="112" cy="132" rx="55" ry="44" fill="#8a5a2b"/><ellipse cx="122" cy="146" rx="30" ry="26" fill="#d9b88a"/><circle cx="150" cy="88" r="34" fill="#9c6a37"/><circle cx="128" cy="60" r="10" fill="#6d4521"/><circle cx="172" cy="60" r="10" fill="#6d4521"/><circle class="eye" cx="140" cy="84" r="4.5" fill="#18241e"/><circle class="eye" cx="162" cy="84" r="4.5" fill="#18241e"/><ellipse cx="151" cy="98" rx="8" ry="5" fill="#18241e"/><rect x="146" y="102" width="10" height="12" rx="2" fill="#fff"/><rect x="150" y="150" width="76" height="28" rx="14" fill="#b98b52"/><circle cx="226" cy="164" r="14" fill="#d9b88a"/></svg></div><div class="info"><h3>Velkommen til bæverdammen</h3><p class="lead">Bæverne får nye venner, nye færdigheder og udfordrer deres nysgerrighed.</p><p>Her leger, arbejder og holder man sammen. Bæverne lærer gennem leg at være en god ved, ringe 1-1-2, binde knob og passe på dyrene og naturen. De tager også på weekendture og sommerlejr.</p><dl class="facts"><div><dt>Alder</dt><dd>Man skal være startet i 0. eller 1. klasse ved spejderårets start i september</dd></div><div><dt>Møder</dt><dd>Tirsdag 17.00–18.30</dd></div><div><dt>Sted</dt><dd>Oftest spejderhuset Liljen, Hammervej 2</dd></div><div><dt>Leder</dt><dd>Michael Rahbek, 25 18 83 07</dd></div></dl><a class="btn main" href="#kontakt">Kontakt os</a></div></div><div class="prose"><h2>Hvem er vi?</h2><p>Vores bæverenhed er for nogle af de yngste spejdere. At være bæver betyder, at man leger sammen, arbejder sammen og holder sammen. Bæverne bor i bæverdammen og lærer en masse sjove ting gennem leg. De lærer for eksempel at være en god ved, ringe 1-1-2, binde knob, passe på dyrene og naturen og meget mere. Bæverne tager også på weekendture og sommerlejr, hvor de leger og lærer hele tiden.</p>
+<p>Det er smaddersjovt at være bæver! Det er kun fantasien, der sætter grænser for, hvad vi kan finde på, og vi har altid plads til flere legekammerater. Lyder det som noget for dit barn, så kom ned og sig hej til os.</p>
+<h2>Bæverledere</h2><p><strong>Michael Rahbek</strong>, enhedsleder<br><a href="tel:25188307">25 18 83 07</a></p>
+<h2>Værd at vide</h2><p>Hvis du ikke kan finde svar her, kan du altid kontakte os på telefon eller mail.</p></div></div></section>
+</main>
+<main data-page="bliv-leder" hidden>
+<div class="pagehead"><div class="wrap"><h1>Bliv leder</h1><p>Vi søger flere.</p></div></div>
+<section><div class="wrap"><div class="prose"><p>Vi søger flere ledere til gruppens enheder. Kontakt os, hvis du vil høre mere om at blive en del af lederflokken.</p><p><a class="btn main" href="#kontakt">Kontakt os</a></p></div></div></section>
+</main>
+<main data-page="bliv-spejder" hidden>
+<div class="pagehead"><div class="wrap"><h1>Bliv spejder</h1><p>Vil du være med? Find din næste oplevelse!</p></div></div>
+<section><div class="wrap"><div class="prose"><p>Vi har en enhed til hver alder, fra 0. klasse og op til 17+ år. Find den rigtige på forsiden, og meld dig til, når du er klar. Du kan også skrive eller ringe til os, så hjælper vi dig i gang.</p><p><a class="btn main" href="https://medlemsservice.spejdernet.dk/member/signup/member/2237" target="_blank" rel="noopener">Meld dig til</a> <a class="btn main" href="#enheder">Find din enhed</a> <a class="btn main" href="#kontakt">Kontakt os</a></p></div></div></section>
+</main>
+<main data-page="faq" hidden>
+<div class="pagehead"><div class="wrap"><h1>Værd at vide</h1><p>Hvis du ikke kan finde svar her, kan du altid kontakte os på telefon eller mail.</p></div></div>
+<section><div class="wrap"><div class="faq" style="background:none"><details><summary>Hvor gammel skal man være?</summary><p>Ved spejderårets start i september skal man være startet i 0. eller 1. klasse for at blive bæver. De andre enheder passer til 2.–4. klasse, 5.–7. klasse, 8. klasse til 17 år og 17+ år.</p></details><details><summary>Hvor mødes vi?</summary><p>Vi holder til i spejderhuset Liljen, Hammervej 2, 7080 Børkop.</p></details><details><summary>Hvornår er der spejder?</summary><p>Bæver, ulv, trop og senior mødes tirsdag eller onsdag aften. Tiderne står ved hver enhed her på siden. Rovere holder klanmøde ca. én gang om måneden.</p></details><details><summary>Hvad skal mit barn have med på lejr?</summary><p>Vi har lavet en pakkeguide til både nye og garvede lejrdeltagere. Find den under Nyheder: Pak til spejderlejr.</p></details><details><summary>Hvor køber jeg uniform?</summary><p>Uniformer, skjorter og udstyr kan købes i Eventyrsports 16 butikker rundt om i landet.</p></details><details><summary>Kan jeg hjælpe som forælder?</summary><p>Ja. Vi søger flere ledere, og du behøver ikke have prøvet det før. Læs mere under Bliv leder.</p></details><details><summary>Hvordan støtter jeg gruppen?</summary><p>Via vores sponsoraftale med OK giver hver tanket liter 5 øre til KFUM-Spejderne i Brejning. Det koster dig ikke ekstra.</p></details></div></div></section>
+</main>
+<main data-page="find-din-uniform-hos-eventyrsport" hidden>
+<div class="pagehead"><div class="wrap"><h1>Køb dit grej i Eventyrsport</h1></div></div>
+<section><div class="wrap"><div class="prose"><a class="back" href="#nyheder">← Alle nyheder</a><p class="date">10. juni 2025</p><p>Køb uniformer, skjorter og udstyr i Eventyrsports 16 butikker rundt om i hele landet.</p><!-- Indsæt resten af artiklen her --></div></div></section>
+</main>
+<main data-page="kalender" hidden>
+<div class="pagehead"><div class="wrap"><h1>Kalender</h1><p>Kommende arrangementer hos Brejning Gruppe.</p></div></div>
+<section><div class="wrap"><div class="events" aria-live="polite">Henter arrangementer…</div></div></section>
+</main>
+<main data-page="kontakt" hidden>
+<div class="pagehead"><div class="wrap"><h1>Kontakt</h1><p>Skriv eller ring til os.</p></div></div>
+<section><div class="wrap"><div class="two"><div><address><strong>Brejning Gruppe</strong><br>Spejderhuset Liljen<br>Hammervej 2<br>7080 Børkop</address><p><a href="tel:20890638">20 89 06 38</a><br><a href="mailto:kristajensen@live.dk">kristajensen@live.dk</a></p><p><a href="https://www.facebook.com/profile.php?id=100064860303135">Facebook</a> · <a href="https://www.instagram.com/kfum_spejderne_i_brejning/">Instagram</a></p></div><iframe class="map" title="Kort over Liljen, Hammervej 2, Brejning" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1564.0426970247017!2d9.677164983908478!3d55.66197583222052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c853d8b5fd99b%3A0x22542e2cdde3aa80!2sKfum%20Spejderne%20Brejning!5e0!3m2!1sda!2sdk!4v1790950693969!5m2!1sda!2sdk"></iframe></div></div></section><section class="hvem"><div class="wrap"><h2>Hvem er vi?</h2><p class="intro">Her kan du se, hvem lederne og den administrative ledelse er.</p><h3 class="gh">Gruppeledelse</h3><ul class="people"><li class="person"><i class="av" aria-hidden="true">KF</i><div><strong>Kenny Fihl Hansen</strong><span>Gruppeleder</span><br><a href="mailto:gruppeleder@brejningspejder.dk">gruppeleder@brejningspejder.dk</a></div></li><li class="person"><i class="av" aria-hidden="true">JH</i><div><strong>Jens Hjort Pedersen</strong><span>Assistent</span></div></li><li class="person"><i class="av" aria-hidden="true">AE</i><div><strong>Andrea Ellegård</strong><span>Assistent</span></div></li></ul><h3 class="gh">Gruppebestyrelsen</h3><ul class="people"><li class="person"><i class="av" aria-hidden="true">HE</i><div><strong>Hans-Christian Ellegård</strong><span>Bestyrelsesformand</span></div></li><li class="person"><i class="av" aria-hidden="true">KJ</i><div><strong>Krista Jensen</strong><span>Kasserer</span></div></li><li class="person"><i class="av" aria-hidden="true">BR</i><div><strong>Brian Refsing</strong><span>Medlem</span></div></li><li class="person"><i class="av" aria-hidden="true">JS</i><div><strong>Jens Sheraan</strong><span>Medlem</span></div></li><li class="person"><i class="av" aria-hidden="true">MG</i><div><strong>Martin Gregersen</strong><span>Medlem</span></div></li></ul><h3 class="gh">Bæverledere</h3><ul class="people"><li class="person"><i class="av" aria-hidden="true">MR</i><div><strong>Michael Rahbek</strong><span>Enhedsleder</span><br><a href="tel:25188307">25 18 83 07</a></div></li></ul><h3 class="gh">Ulveledere</h3><ul class="people"><li class="person"><i class="av" aria-hidden="true">M</i><div><strong>Marianne</strong><span>Enhedsleder</span></div></li><li class="person"><i class="av" aria-hidden="true">L</i><div><strong>Lisbeth</strong><span>Medhjælper</span></div></li><li class="person"><i class="av" aria-hidden="true">J</i><div><strong>Jens</strong><span>Medhjælper</span></div></li><li class="person"><i class="av" aria-hidden="true">M</i><div><strong>Maja</strong><span>Medhjælper</span></div></li></ul></div></section>
+</main>
+<main data-page="nyheder" hidden>
+<div class="pagehead"><div class="wrap"><h1>Nyheder</h1><p>Det sker i Brejning Gruppe.</p></div></div>
+<section><div class="wrap"><div class="posts one"><a class="post" href="#stoet-kfum-spejderne-i-brejning-hver-gang-du-tanker"><p class="date">22. oktober 2025</p><h3>Støt KFUM-Spejderne i Brejning, hver gang du tanker</h3><p>Vi har indgået en sponsoraftale med OK, så du kan støtte KFUM-Spejderne i Brejning, hver gang du tanker. Og vigtigst af alt, det koster dig …</p></a><a class="post" href="#spejderkurser-en-guide-til-dig-som-foraelder"><p class="date">7. august 2025</p><h3>Spejderkurser – en guide til dig som forælder</h3><p>Når dit barn begynder til spejder, åbner der sig en verden af oplevelser, fællesskab og personlig udvikling.</p></a><a class="post" href="#pak-til-lejr"><p class="date">11. juni 2025</p><h3>Pak til spejderlejr</h3><p>Hvad skal dit barn have med på lejr? Find guiden til garvede som nye lejrdeltagere her.</p></a><a class="post" href="#find-din-uniform-hos-eventyrsport"><p class="date">10. juni 2025</p><h3>Køb dit grej i Eventyrsport</h3><p>Køb uniformer, skjorter og udstyr i Eventyrsports 16 butikker rundt om i hele landet.</p></a></div></div></section>
+</main>
+<main data-page="om-os" hidden>
+<div class="pagehead"><div class="wrap"><h1>Om os</h1><p>KFUM-Spejderne i Brejning.</p></div></div>
+<section><div class="wrap"><div class="two"><div class="prose"><p>Vi holder til i spejderhuset Liljen på Hammervej 2, Brejning, 7080 Børkop, og tilbyder spejder til mange aldre: bæver, ulv, trop, senior og rover.</p><p><a href="#samvaersregler">Læs vores samværsregler</a></p><p><a class="btn main" href="#enheder">Se enhederne</a></p></div><iframe class="map" title="Kort over Liljen, Hammervej 2, Brejning" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1564.0426970247017!2d9.677164983908478!3d55.66197583222052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c853d8b5fd99b%3A0x22542e2cdde3aa80!2sKfum%20Spejderne%20Brejning!5e0!3m2!1sda!2sdk!4v1790950693969!5m2!1sda!2sdk"></iframe></div></div></section>
+</main>
+<main data-page="pak-til-lejr" hidden>
+<div class="pagehead"><div class="wrap"><h1>Pak til spejderlejr</h1></div></div>
+<section><div class="wrap"><div class="prose"><a class="back" href="#nyheder">← Alle nyheder</a><p class="date">11. juni 2025</p><p>Hvad skal dit barn have med på lejr? Find guiden til garvede som nye lejrdeltagere her.</p><!-- Indsæt resten af artiklen her --></div></div></section>
+</main>
+<main data-page="rovere" hidden>
+<div class="pagehead"><div class="wrap"><h1>Roverne</h1><p>Én af enhederne i Brejning Gruppe.</p></div></div>
+<section><div class="wrap"><a class="back" href="#enheder">← Alle enheder</a><div class="panel" style="--bg:#e6dff0"><div class="stage"><svg viewBox="0 0 240 200" role="img" aria-label="Tegning af et bjerg med et flag"><circle class="moon" cx="198" cy="42" r="20" fill="#f2c230"/><path d="M6 180L100 62L158 132L188 98L238 180Z" fill="#6a4c93"/><path d="M100 62l-20 24 12-6 8 10 8-10 12 6Z" fill="#fff"/><path d="M100 62V28" stroke="#18241e" stroke-width="3"/><path class="flag" d="M100 28l30 9-30 9Z" fill="#c4452e"/><path class="trailp" d="M30 180C70 165 60 140 100 135S150 150 180 178" fill="none" stroke="#f2c230" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/></svg></div><div class="info"><h3>Roverne</h3><p class="lead">Enheden for dig på 17 år eller ældre.</p><p>Læs om roverklanen og dens møder på enhedens side.</p><dl class="facts"><div><dt>Alder</dt><dd>17 år eller ældre</dd></div><div><dt>Møder</dt><dd>Klanmøde ca. én gang om måneden</dd></div><div><dt>Sted</dt><dd>Spejderhuset Liljen, Hammervej 2</dd></div></dl><a class="btn main" href="#kontakt">Kontakt os</a></div></div></div></section>
+</main>
+<main data-page="samvaersregler" hidden>
+<div class="pagehead"><div class="wrap"><h1>Samværsregler</h1><p>Sådan sikrer vi trygge rammer for alle spejdere i Brejning Gruppe.</p></div></div>
+<section><div class="wrap"><div class="prose">
+<p>Version: 01-10-2026. <a href="https://brejningspejder.dk/wp-content/uploads/sites/55/2026/11/2026-Samvaersregler-1.pdf">Hent som PDF</a></p>
+<p>Reglerne er vedtaget af både gruppebestyrelse og lederflok. Alle ledere, bestyrelsesmedlemmer og ungeledere skal være orienteret om samværsreglerne. Det er fast punkt på alle leder- og bestyrelsesmøder, om reglerne overholdes, og om alle er orienteret om dem. Det er til enhver tid den siddende gruppebestyrelse, der har ansvaret for, at de overholdes. Ved overtrædelser eller mistanke om sådanne skal gruppebestyrelsen altid orienteres. Den siddende gruppebestyrelse fremgår altid af gruppens hjemmeside, <a href="#kontakt">se Kontakt</a>.</p>
+<h2>Lovgivningen</h2><ul>
+<li>Det er strafbart at have seksuel omgang med et barn under 15 år.</li>
+<li>Det er strafbart at have seksuel omgang med personer under 18 år, hvis du er betroet at undervise eller opdrage eller har anden form for herredømme i kraft af status eller alder. Det gælder også spejderledere, og det har ingen betydning, om den unge er villig til eller opfordrer til seksuelt samvær.</li>
+<li>Det er strafbart at krænke blufærdigheden. Straffen skærpes, hvis det sker over for et barn under 15 år.</li>
+<li>Som spejderleder har du pligt til at underrette kommunen, hvis du får kendskab til vold, overgreb, mishandling, vanrøgt eller anden nedværdigende behandling af et barn eller en ung. At få kendskab til betyder at være ret sikker på. En sådan indberetning bør ske i samarbejde med korpsets kriseberedskab, hvis en spejderleder er involveret.</li>
+<li>Hvis et medlem af KFUM-Spejderne mistænkes eller anklages for overgreb eller krænkelse af et barn, bortvises personen straks og ekskluderes afhængigt af sagen som medlem af korpset, enten med det samme eller i forbindelse med en domsfældelse.</li></ul>
+<h2>Omgangstone</h2><p>I Brejning Gruppe taler vi ordentligt til og om hinanden og omtaler hinanden med respekt. Vi siger fra over for enhver form for mobning. Vi er åbne for at tale med spejderne om svære og ømtålelige emner. Vi er bevidste om vores rolle som tillidspersoner og om vores pligt i forhold til myndighederne.</p>
+<h2>Overnatningspolitik</h2><p>I Brejning Gruppe ser vi det som naturligt, at piger og drenge gerne må sove sammen på tværs af køn, hver i sin sovepose. Hvis nogle spejdere synes, det er udfordrende, opfordrer vi til en åben dialog med lederne, da der som udgangspunkt altid kan findes en løsning, som tilgodeser særlige behov.</p>
+<p>Af hensyn til lederne sover vi aldrig tæt sammen med spejderne. I praksis betyder det mindst en afstand svarende til bredden på et liggeunderlag. Som udgangspunkt sover lederne alene eller mindst to sammen, hvis der er spejdere i samme lokale eller telt.</p>
+<h2>Børneattester</h2><p>Det er gruppelederens ansvar, at der til enhver tid foreligger gyldige børneattester på alle over 15 år, som deltager som leder eller assistent i vores aktiviteter. Hvis forældre deltager på lejre med overnatning, skal der også indhentes børneattester på dem. Børneattester indhentes via Medlemsservice, og en gyldig liste kan altid rekvireres derfra.</p>
+<p>Alle børneattester indhentes fra politiet mindst hvert 2. år for medlemmer, der fortsat deltager aktivt i gruppens arbejde. Hvis et medlem kommer fra en anden gruppe, indhentes en ny børneattest ved indmeldelse i Brejning Gruppe.</p>
+<h2>Intimsfæren</h2><p>I Brejning Gruppe undgår vi tæt fysisk kontakt mellem børn og voksne i intime situationer, som toiletbesøg, omklædning og badesituationer. Vi udfører ikke aktiviteter, hvor der er risiko for at overtræde spejdernes blufærdighedsgrænse, og vi er både årvågne og lydhøre. Intimsfæren er defineret som badedragtsområdet.</p>
+<p>I henhold til korpsets regler opholder ledere sig ikke som eneste voksne på et toilet eller i et baderum med lukket dør sammen med en eller flere spejdere.</p>
+<h2>Fotografering</h2><p>Vi tager ikke billeder, der efterfølgende kan tolkes som krænkende. Vi respekterer de enkelte spejderes grænser og de fototilladelser, der er givet ved indmeldelsen.</p>
+<h2>Sociale medier</h2><p>På sociale medier overholder vi vores normale omgangstone og respekt for hinanden, og vi bruger et acceptabelt sprog. Kommunikationen foregår i fora, der er åbne for mere end én leder eller voksen. Beskeder af praktisk karakter kan dog sendes direkte, typisk som sms, hvis det er nødvendigt.</p>
+<p>Vi holder vores roller adskilt, så gruppens profiler og administratorrettigheder kun bruges til at udtrykke gruppens holdning, ikke individuelle meninger. Man udtaler sig ikke på gruppens vegne, medmindre man ved, at gruppen er enig i udsagnet. Kommunikation på sociale medier skal helst kun være af praktisk karakter.</p></div></div></section>
+</main>
+<main data-page="seniorer" hidden>
+<div class="pagehead"><div class="wrap"><h1>Seniorerne</h1><p>Én af enhederne i Brejning Gruppe.</p></div></div>
+<section><div class="wrap"><a class="back" href="#enheder">← Alle enheder</a><div class="panel" style="--bg:#f6dcd3"><div class="stage"><svg viewBox="0 0 240 200" role="img" aria-label="Tegning af et kompas"><circle cx="120" cy="100" r="74" fill="#fff" stroke="#1e3a2f" stroke-width="8"/><circle cx="120" cy="100" r="60" fill="none" stroke="#dcebd5" stroke-width="2" stroke-dasharray="3 8"/><text x="120" y="52" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#1e3a2f">N</text><text x="120" y="160" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#1e3a2f">S</text><text x="182" y="106" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#1e3a2f">Ø</text><text x="58" y="106" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#1e3a2f">V</text><g class="needle"><path d="M120 62L131 100H109Z" fill="#c4452e"/><path d="M120 138L131 100H109Z" fill="#8b98a0"/></g><circle cx="120" cy="100" r="6" fill="#1e3a2f"/></svg></div><div class="info"><h3>Seniorerne</h3><p class="lead">Enheden for 8. klasse og op til 17 år.</p><p>Læs om seniorernes program, ledere og ture på enhedens side.</p><dl class="facts"><div><dt>Alder</dt><dd>8. klasse til 17 år</dd></div><div><dt>Møder</dt><dd>Tirsdag eller onsdag 18.30–20.30, efter program</dd></div><div><dt>Sted</dt><dd>Spejderhuset Liljen, Hammervej 2</dd></div></dl><a class="btn main" href="#kontakt">Kontakt os</a></div></div></div></section>
+</main>
+<main data-page="spejderkurser-en-guide-til-dig-som-foraelder" hidden>
+<div class="pagehead"><div class="wrap"><h1>Spejderkurser – en guide til dig som forælder</h1></div></div>
+<section><div class="wrap"><div class="prose"><a class="back" href="#nyheder">← Alle nyheder</a><p class="date">7. august 2025</p><p>Når dit barn begynder til spejder, åbner der sig en verden af oplevelser, fællesskab og personlig udvikling.</p><!-- Indsæt resten af artiklen her --></div></div></section>
+</main>
+<main data-page="stoet-kfum-spejderne-i-brejning-hver-gang-du-tanker" hidden>
+<div class="pagehead"><div class="wrap"><h1>Støt KFUM-Spejderne i Brejning, hver gang du tanker</h1></div></div>
+<section><div class="wrap"><div class="prose"><a class="back" href="#nyheder">← Alle nyheder</a><p class="date">22. oktober 2025</p><p>Vi har indgået en sponsoraftale med OK, så du kan støtte KFUM-Spejderne i Brejning, hver gang du tanker. Og vigtigst af alt, det koster dig ikke ekstra at støtte vores forening – OK betaler hele beløbet. Du støtter vores forening med 5 øre/liter – uanset om du bestiller et OK Kort eller betaler med OK-appen.</p><!-- Indsæt resten af artiklen her --></div></div></section>
+</main>
+<main data-page="troppen" hidden>
+<div class="pagehead"><div class="wrap"><h1>Troppen</h1><p>Én af enhederne i Brejning Gruppe.</p></div></div>
+<section><div class="wrap"><a class="back" href="#enheder">← Alle enheder</a><div class="panel" style="--bg:#d6e9dd"><div class="stage"><svg viewBox="0 0 240 200" role="img" aria-label="Tegning af et telt og et bål"><circle class="star" cx="170" cy="30" r="3" fill="#2f6b4f"/><path d="M10 178h220" stroke="#2f6b4f" stroke-width="4" stroke-linecap="round"/><path d="M20 176L90 60L160 176Z" fill="#2f6b4f"/><path d="M76 176L90 112L104 176Z" fill="#1c3f2f"/><path d="M90 60V34" stroke="#18241e" stroke-width="3"/><path class="flag" d="M90 34l26 8-26 8Z" fill="#f2c230"/><path d="M178 176l44-12M222 176l-44-12" stroke="#5b3a1a" stroke-width="7" stroke-linecap="round"/><path class="flame" d="M200 170C182 150 194 138 200 112C206 138 218 150 200 170Z" fill="#f08a24"/><path class="flame f2" d="M200 168C192 156 197 148 200 136C203 148 208 156 200 168Z" fill="#f2c230"/></svg></div><div class="info"><h3>Troppen</h3><p class="lead">Enheden for børn i 5.–7. klasse.</p><p>Læs om troppens program, ledere og ture på enhedens side.</p><dl class="facts"><div><dt>Alder</dt><dd>5.–7. klasse</dd></div><div><dt>Møder</dt><dd>Tirsdag eller onsdag 18.30–20.30, efter program</dd></div><div><dt>Sted</dt><dd>Spejderhuset Liljen, Hammervej 2</dd></div></dl><a class="btn main" href="#kontakt">Kontakt os</a></div></div></div></section>
+</main>
+<main data-page="ulvene" hidden>
+<div class="pagehead"><div class="wrap"><h1>Ulvene</h1><p>Én af enhederne i Brejning Gruppe.</p></div></div>
+<section><div class="wrap"><a class="back" href="#enheder">← Alle enheder</a><div class="panel" style="--bg:#dbe5ee"><div class="stage"><svg viewBox="0 0 240 200" role="img" aria-label="Tegning af en ulv der hyler mod månen"><circle class="moon" cx="190" cy="48" r="30" fill="#f6e7a1"/><circle class="star" cx="40" cy="40" r="3" fill="#fff"/><circle class="star s2" cx="80" cy="25" r="2.5" fill="#fff"/><circle class="star" cx="25" cy="90" r="2" fill="#fff"/><path d="M60 165L62 95L82 50L104 88H136L158 50L178 95L180 165Q120 198 60 165Z" fill="#6f8196"/><path class="ear" d="M70 92L83 62L97 90Z" fill="#c9d4df"/><path d="M170 92L157 62L143 90Z" fill="#c9d4df"/><circle class="eye" cx="98" cy="122" r="5.5" fill="#18241e"/><circle class="eye" cx="142" cy="122" r="5.5" fill="#18241e"/><ellipse cx="120" cy="152" rx="26" ry="19" fill="#c9d4df"/><ellipse cx="120" cy="143" rx="9" ry="6" fill="#18241e"/><path d="M120 149v10M108 162q12 8 24 0" stroke="#18241e" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div><div class="info"><h3>Ulvene</h3><p class="lead">Enheden for børn i 2.–4. klasse.</p><p>Læs om ulvenes møder, ledere og ture på enhedens side.</p><dl class="facts"><div><dt>Alder</dt><dd>2.–4. klasse</dd></div><div><dt>Møder</dt><dd>Tirsdag 18.00–19.30</dd></div><div><dt>Sted</dt><dd>Spejderhuset Liljen, Hammervej 2</dd></div></dl><a class="btn main" href="#kontakt">Kontakt os</a></div></div></div></section>
+</main>
+
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>Brejning Gruppe</h3>
+        <p>Hammervej 2, 7080 Børkop<br>
+        <a href="tel:20890638">20 89 06 38</a><br>
+        <a href="mailto:kristajensen@live.dk">kristajensen@live.dk</a></p>
+        <p>
+          <a href="https://www.facebook.com/profile.php?id=100064860303135">Facebook</a> ·
+          <a href="https://www.instagram.com/kfum_spejderne_i_brejning/">Instagram</a>
+        </p>
+      </div>
+      <div>
+        <h3>For nye</h3>
+        <ul>
+          <li><a href="#bliv-spejder">Bliv spejder</a></li>
+          <li><a href="#bliv-leder">Bliv leder</a></li>
+          <li><a href="#enheder">Enheder</a></li>
+          <li><a href="#faq">Værd at vide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Gruppen</h3>
+        <ul>
+          <li><a href="#kalender">Kalender</a></li>
+          <li><a href="#nyheder">Nyheder</a></li>
+          <li><a href="#om-os">Om os</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="https://kfumspejderne.dk/">Om KFUM-Spejderne i Danmark</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="small">© Brejning Gruppe, KFUM-Spejderne</p>
+  </div>
+</footer>
+
+<script>
+  var btn=document.querySelector('.menu-btn'),nav=document.getElementById('hovedmenu');
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open);
+  });
+
+  /* faner */
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function show(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on})}
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t)});
+    t.addEventListener('keydown',function(e){var d={ArrowRight:1,ArrowLeft:-1}[e.key];if(d){var x=tabs[(i+d+tabs.length)%tabs.length];x.focus();show(x)}});
+  });
+  /* animation ved scroll */
+  document.documentElement.classList.add('js');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  document.querySelectorAll('.reveal,.post,.faq details').forEach(function(el){el.classList.add('reveal');io.observe(el)});
+  /* kontaktformular */
+  var f=document.getElementById('kform'),b=document.getElementById('besked');
+  b.addEventListener('input',function(){document.getElementById('tael').textContent=b.value.length+' / 600'});
+  function fejl(id,msg){
+    var el=document.getElementById(id);el.setAttribute('aria-invalid',!!msg);
+    document.getElementById('e-'+id).textContent=msg||'';return !msg;
+  }
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=document.getElementById('navn').value.trim(),m=document.getElementById('mail').value.trim(),t=b.value.trim();
+    var ok=[fejl('navn',n?'':'Skriv dit navn.'),
+            fejl('mail',/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m)?'':'Skriv en gyldig e-mailadresse.'),
+            fejl('besked',t.length>=10?'':'Skriv mindst 10 tegn.')].every(Boolean);
+    if(!ok)return;
+    var body=encodeURIComponent(t+'\n\nFra: '+n+' ('+m+')');
+    location.href='mailto:kristajensen@live.dk?subject='+encodeURIComponent('Henvendelse fra brejningspejder.dk')+'&body='+body;
+    document.getElementById('kvit').innerHTML='<p class="ok">Tak, '+n.replace(/[<>&]/g,'')+'. Din mailapp åbner nu.</p>';
+  });
+
+  /* kalender: henter automatisk fra jeres iCal-feed */
+  var ICS_URL='https://medlemsservice.spejdernet.dk/ical?orgs=2237'; /* jeres iCal-feed fra Medlemsservice */
+  var FALLBACK=String.raw`BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:SG Member / Odoo / icalendar
+BEGIN:VEVENT
+SUMMARY:Uddeling af kirkeblade - november 2026
+DTSTART:20261115T150000Z
+DTEND:20261201T150000Z
+DTSTAMP:20261116T210242Z
+UID:39487@a3abba42-5f96-11ee-a13d-0242ac19e003
+DESCRIPTION:Så er det tiden at få lidt frisk luft\, en rask gåtur og d
+ ele kirkeblade og en flyer ud i Gauerslund sogn (Børkop\, Brejning og And
+ kær).Kirkebladene og flyeren for aktivitetscenteret i Børkop er klar t
+ il uddeling fra tirsdag d. 17. november og udleveres kl. 17-19 i hallen i
+  spejderhuset på Hammervej 2. Tilstræb at få dem hentet i dette tidsru
+ m\, men hvis I ikke har mulighed for det\, så send en sms på 51568733\,
+  så finder vi ud af noget.Der er ca. 14 dage til at få dem delt ud og al
+ le husstande skal have et kirkeblad og en flyer. Når I har delt dem ud\, 
+ skal vi have evt. overskydende blade retur i spejderhuset senest tirsdag
+  d. 1. december\n\n - de kan også afleveres i postkassen på Hasselvang 8
+ 8 i Brejning. Husk under alle omstændigheder at sende en sms på 51568733
+  med rutenummeret\, spejderens navn samt jeres eget navn\, når uddelinge
+ n er afsluttet. Dermed kan vi få sendt regningen med god samvittighed og
+  I kan glæde jer over at have bidraget til spejderarbejdet og vist jeres 
+ barn hvordan vi alle løfter i flok for fællesskabets skyld.Forventningen
+  er at alle familier tager minimum 1 rute per spejder.God fornøjelse :-)
+ Med spejder hilsen Hans-Christian\, 51568733\, på vegne af forældrebest
+ yrelsenPS: Beklager at I skal skrive de samme informationer flere gange\, 
+ men det gør det efterfølgende arbejde væsentligt lettere\, da visse inf
+ ormationer ikke kommer med i dataudtrækket. På forhånd tak for hjælpen
+ .
+LOCATION:Brejning Gruppe\, Hammervej 2\, Brejning\, 7080 Børkop
+END:VEVENT
+END:VCALENDAR
+`;
+  var TZ='Europe/Copenhagen';
+  function pd(v){var m=/^(\d{4})(\d\d)(\d\d)(?:T(\d\d)(\d\d)(\d\d)(Z?))?$/.exec(v||'');if(!m)return null;
+    if(!m[4])return{d:new Date(+m[1],m[2]-1,+m[3]),all:true};
+    return{d:m[7]?new Date(Date.UTC(+m[1],m[2]-1,+m[3],+m[4],+m[5],+m[6])):new Date(+m[1],m[2]-1,+m[3],+m[4],+m[5],+m[6])}}
+  function un(v){return(v||'').replace(/\\n/gi,'\n').replace(/\\([,;\\])/g,'$1')}
+  function parseICS(t){
+    t=t.replace(/\r?\n[ \t]/g,'');var out=[];
+    t.split('BEGIN:VEVENT').slice(1).forEach(function(b){
+      var e={};b.split('END:VEVENT')[0].split(/\r?\n/).forEach(function(l){var i=l.indexOf(':');if(i>0)e[l.slice(0,i).split(';')[0].toUpperCase()]=l.slice(i+1)});
+      var s=pd(e.DTSTART),en=pd(e.DTEND);if(!s)return;
+      var end=en?en.d:s.d;if(en&&en.all)end=new Date(end.getTime()-864e5);
+      out.push({t:un(e.SUMMARY),s:s.d,e:end,all:!!s.all,loc:un(e.LOCATION),desc:un(e.DESCRIPTION)});
+    });
+    return out;
+  }
+  function fd(d,o){o.timeZone=TZ;return d.toLocaleDateString('da-DK',o)}
+  function ft(d){return d.toLocaleTimeString('da-DK',{hour:'2-digit',minute:'2-digit',timeZone:TZ})}
+  function el(tag,cls,txt){var x=document.createElement(tag);if(cls)x.className=cls;if(txt)x.textContent=txt;return x}
+  function render(list){
+    var today=new Date();today.setHours(0,0,0,0);
+    list=list.filter(function(x){return x.e>=today}).sort(function(a,b){return a.s-b.s});
+    document.querySelectorAll('.events').forEach(function(c){
+      c.textContent='';
+      var items=list.slice(0,+c.dataset.limit||99);
+      if(!items.length){var bx=el('div','box');bx.appendChild(el('strong','','Ingen kommende arrangementer lige nu.'));bx.appendChild(document.createElement('br'));bx.appendChild(document.createTextNode('Kig forbi igen snart.'));c.appendChild(bx);return}
+      items.forEach(function(x){
+        var a=el('article','ev'),dt=el('div','dt'),b=el('b','',fd(x.s,{day:'numeric'}));dt.appendChild(b);dt.appendChild(document.createTextNode(fd(x.s,{month:'short'})));
+        var body=el('div'),multi=fd(x.s,{day:'numeric',month:'short'})!==fd(x.e,{day:'numeric',month:'short'});
+        var when=multi?fd(x.s,{day:'numeric',month:'long'})+' – '+fd(x.e,{day:'numeric',month:'long'}):(x.all?'Hele dagen':ft(x.s)+(x.e>x.s?'–'+ft(x.e):''));
+        body.appendChild(el('h3','',x.t));body.appendChild(el('p','meta',when+(x.loc?' · '+x.loc:'')));
+        if(x.desc){var d=el('details'),sm=el('summary','','Læs mere');d.appendChild(sm);d.appendChild(el('p','',x.desc));body.appendChild(d)}
+        a.appendChild(dt);a.appendChild(body);c.appendChild(a);
+      });
+    });
+  }
+  function loadCal(){
+    (ICS_URL?fetch(ICS_URL,{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.text()}):Promise.reject())
+      .then(parseICS).catch(function(){return parseICS(FALLBACK)}).then(render);
+  }
+  loadCal();setInterval(loadCal,18e5);
+  /* sidevisning (én fil, flere sider) */
+  var T={"forside": "Brejning Gruppe – KFUM-Spejderne", "baevere": "Bævere – Brejning Gruppe", "bliv-leder": "Bliv leder – Brejning Gruppe", "bliv-spejder": "Bliv spejder – Brejning Gruppe", "faq": "Værd at vide – Brejning Gruppe", "find-din-uniform-hos-eventyrsport": "Køb dit grej i Eventyrsport – Brejning Gruppe", "kalender": "Kalender – Brejning Gruppe", "kontakt": "Kontakt – Brejning Gruppe", "nyheder": "Nyheder – Brejning Gruppe", "om-os": "Om os – Brejning Gruppe", "pak-til-lejr": "Pak til spejderlejr – Brejning Gruppe", "rovere": "Roverne – Brejning Gruppe", "samvaersregler": "Samværsregler – Brejning Gruppe", "seniorer": "Seniorerne – Brejning Gruppe", "spejderkurser-en-guide-til-dig-som-foraelder": "Spejderkurser – en guide til dig som forælder – Brejning Gruppe", "stoet-kfum-spejderne-i-brejning-hver-gang-du-tanker": "Støt KFUM-Spejderne i Brejning, hver gang du tanker – Brejning Gruppe", "troppen": "Troppen – Brejning Gruppe", "ulvene": "Ulvene – Brejning Gruppe"};
+  function route(){
+    var h=decodeURIComponent(location.hash.slice(1))||'forside';
+    if(h==='indhold')return;
+    var pg=h,anchor=null;
+    if(!document.querySelector('main[data-page="'+pg+'"]')){anchor=h;pg='forside'}
+    document.querySelectorAll('main[data-page]').forEach(function(m){var on=m.dataset.page===pg;m.hidden=!on;m.id=on?'indhold':''});
+    document.title=T[pg]||T.forside;
+    document.getElementById('hovedmenu').classList.remove('open');
+    var el=anchor&&document.getElementById(anchor);
+    if(el)el.scrollIntoView();else window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',route);route();
+</script>
+</body>
 </html>
