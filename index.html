@@ -131,8 +131,6 @@ footer a{text-underline-offset:4px}
 
 
 /* animation */
-.leaf{position:absolute;top:-30px;width:13px;height:21px;background:var(--moss);border-radius:0 100% 0 100%;opacity:.75;animation:fall linear infinite}
-@keyframes fall{to{transform:translate(60px,620px) rotate(320deg)}}
 .hero h1{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
 .hero p,.hero .btns{animation:rise .9s .25s cubic-bezier(.2,.8,.2,1) both}
 @keyframes rise{from{opacity:0;transform:translateY(24px)}}
@@ -226,6 +224,38 @@ nav .sub:hover ul,nav .sub:focus-within ul{display:flex}
 .posts.one{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .box{background:var(--leaf);border-radius:14px;padding:1.2rem 1.4rem;margin:1.5rem 0}
 @media (max-width:860px){.panel{grid-template-columns:1fr}}
+
+/* ny forside-animation */
+.hero{padding:4.5rem 0 11rem}
+.hero h1{font-size:clamp(2.4rem,6.2vw,4.6rem);max-width:15ch;animation:rise .7s cubic-bezier(.2,.8,.2,1) both}
+.land{position:absolute;left:0;right:0;bottom:0;width:100%;height:clamp(130px,26vw,320px);display:block}
+.land .l1{animation:drift 16s ease-in-out infinite alternate}
+.land .l2{animation:drift 11s ease-in-out infinite alternate-reverse}
+@keyframes drift{to{transform:translateX(-36px)}}
+.scene{position:absolute;right:max(2vw,calc((100vw - 1120px)/2));bottom:clamp(40px,6vw,90px);width:min(36vw,470px);height:auto}
+.spark{fill:#f2c230;opacity:0;animation:spark 2.8s ease-out infinite}
+.spark.b{animation-delay:-.7s;--dx:-16px}.spark.c{animation-delay:-1.5s;--dx:22px}.spark.d{animation-delay:-2.1s;--dx:-6px}
+@keyframes spark{0%{opacity:0;transform:translate(0,0)}15%{opacity:1}100%{opacity:0;transform:translate(var(--dx,10px),-110px)}}
+@media (max-width:860px){.scene{display:none}.hero{padding-bottom:8rem}}
+
+/* mere liv */
+.sky{position:absolute;left:0;top:0;width:100%;height:60%;pointer-events:none}
+.cloud{fill:#cfe0d3;opacity:.11;animation:cloud 85s linear infinite}
+.cloud.c2{animation-duration:115s;animation-delay:-50s;opacity:.08}
+.cloud.c3{animation-duration:100s;animation-delay:-22s;opacity:.09}
+@keyframes cloud{from{transform:translateX(-300px)}to{transform:translateX(1800px)}}
+.bird{animation:fly 30s linear infinite}
+@keyframes fly{from{transform:translate(-80px,0)}50%{transform:translate(740px,-26px)}to{transform:translate(1540px,6px)}}
+.wing{fill:none;stroke:#cfe0d3;stroke-width:1.8;stroke-linecap:round;opacity:.7;transform-box:fill-box;transform-origin:center;animation:flap .55s ease-in-out infinite alternate}
+@keyframes flap{to{transform:scaleY(.35)}}
+.ff{animation:float 6s ease-in-out infinite alternate,tw 2.4s ease-in-out infinite}
+@keyframes float{to{transform:translate(var(--fx,20px),var(--fy,-14px))}}
+.glow{opacity:.6;animation:glow 1.6s ease-in-out infinite alternate}
+@keyframes glow{to{opacity:1}}
+.waver{animation:wavearm 1.1s ease-in-out infinite}
+@keyframes wavearm{0%,100%{transform:rotate(-25deg)}50%{transform:rotate(22deg)}}
+.stick{animation:roast 3s ease-in-out infinite}
+@keyframes roast{50%{transform:rotate(5deg)}}
 </style>
 </head>
 <body>
@@ -252,7 +282,7 @@ nav .sub:hover ul,nav .sub:focus-within ul{display:flex}
 
 <main data-page="forside">
   <div class="hero">
-    <span class="leaf" style="left:8%;animation-duration:11s;animation-delay:-2s"></span><span class="leaf" style="left:24%;animation-duration:14s;animation-delay:-7s"></span><span class="leaf" style="left:41%;animation-duration:10s;animation-delay:-4s"></span><span class="leaf" style="left:58%;animation-duration:13s;animation-delay:-9s"></span><span class="leaf" style="left:74%;animation-duration:12s;animation-delay:-1s"></span><span class="leaf" style="left:90%;animation-duration:15s;animation-delay:-6s"></span>
+    
     <div class="wrap">
       <h1>Velkommen hos Brejning Gruppe</h1>
       <p>KFUM-Spejderne i Brejning. Ture, bål, venner og nye udfordringer for børn og unge fra 0. klasse og op.</p>
@@ -261,11 +291,24 @@ nav .sub:hover ul,nav .sub:focus-within ul{display:flex}
         <a class="btn ghost" href="#kalender">Se kommende arrangementer</a>
       </div>
     </div>
-    <svg class="trail" viewBox="0 0 760 360" aria-hidden="true">
-      <path class="hill" d="M0 360V250C120 170 220 210 330 160S560 90 760 180V360Z"/>
-      <path class="hill2" d="M120 360V290C230 230 340 280 460 230S640 190 760 240V360Z"/>
-      <path d="M40 330C150 300 190 250 290 250S420 300 520 230 640 120 730 70"/>
-      <circle cx="730" cy="70" r="9" fill="#f2c230"/>
+    <svg class="sky" viewBox="0 0 1440 300" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><g transform="translate(0,70)"><g class="cloud "><ellipse cx="0" cy="0" rx="90" ry="22"/><ellipse cx="40" cy="-14" rx="55" ry="24"/><ellipse cx="-50" cy="4" rx="70" ry="18"/></g></g><g transform="translate(0,150)"><g class="cloud c2"><ellipse cx="0" cy="0" rx="90" ry="22"/><ellipse cx="40" cy="-14" rx="55" ry="24"/><ellipse cx="-50" cy="4" rx="70" ry="18"/></g></g><g transform="translate(0,40)"><g class="cloud c3"><ellipse cx="0" cy="0" rx="90" ry="22"/><ellipse cx="40" cy="-14" rx="55" ry="24"/><ellipse cx="-50" cy="4" rx="70" ry="18"/></g></g><g transform="translate(0,110) scale(1.9)"><g class="bird" style="animation-duration:30s;animation-delay:-3s"><path class="wing" d="M0 0q7 -9 14 0q7 -9 14 0"/></g></g><g transform="translate(0,95) scale(1.52)"><g class="bird" style="animation-duration:30s;animation-delay:-5s"><path class="wing" d="M0 0q7 -9 14 0q7 -9 14 0"/></g></g><g transform="translate(0,185) scale(2.28)"><g class="bird" style="animation-duration:38s;animation-delay:-14s"><path class="wing" d="M0 0q7 -9 14 0q7 -9 14 0"/></g></g><g transform="translate(0,60) scale(1.33)"><g class="bird" style="animation-duration:44s;animation-delay:-22s"><path class="wing" d="M0 0q7 -9 14 0q7 -9 14 0"/></g></g></svg>
+    <svg class="land" viewBox="0 0 1440 320" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <path class="l1" fill="#2a4d3e" d="M-80 220C140 150 320 190 520 160S900 90 1100 140 1360 170 1520 130V320H-80Z"/>
+      <path class="l2" fill="#356150" d="M-80 262C200 205 380 252 620 218S1000 172 1220 222 1420 232 1520 212V320H-80Z"/>
+      <g fill="#173126"><path d="M-80 296C260 268 520 302 800 282S1220 272 1520 292V320H-80Z"/><path d="M70 304L90 236L110 304Z"/><path d="M130 304L150 236L170 304Z"/><path d="M1160 304L1180 236L1200 304Z"/><path d="M1230 304L1250 236L1270 304Z"/><path d="M1310 304L1330 236L1350 304Z"/></g>
+      <g fill="#f6e7a1"><circle class="ff" style="--fx:24px;--fy:-16px;animation-delay:-0s" cx="300" cy="232" r="3"/><circle class="ff" style="--fx:-18px;--fy:-12px;animation-delay:-2s" cx="520" cy="252" r="3"/><circle class="ff" style="--fx:20px;--fy:-20px;animation-delay:-4s" cx="760" cy="216" r="3"/><circle class="ff" style="--fx:-26px;--fy:-10px;animation-delay:-1s" cx="960" cy="246" r="3"/><circle class="ff" style="--fx:16px;--fy:-18px;animation-delay:-3s" cx="1100" cy="226" r="3"/><circle class="ff" style="--fx:28px;--fy:-12px;animation-delay:-5s" cx="220" cy="264" r="3"/><circle class="ff" style="--fx:-20px;--fy:-14px;animation-delay:-2s" cx="1240" cy="254" r="3"/></g>
+    </svg>
+    <svg class="scene" viewBox="0 0 440 300" aria-hidden="true">
+      <circle class="moon" cx="350" cy="50" r="22" fill="#f6e7a1" opacity=".9"/>
+      <g fill="#fff"><circle class="star" cx="60" cy="40" r="2.5"/><circle class="star s2" cx="150" cy="22" r="2"/><circle class="star" cx="250" cy="62" r="2.5"/><circle class="star s2" cx="415" cy="120" r="2"/><circle class="star" cx="28" cy="112" r="2"/></g>
+      <path class="trailp" d="M-10 296C50 292 90 298 150 288" fill="none" stroke="#f2c230" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>
+      <path d="M60 292L150 150L240 292Z" fill="#e9dcae"/><path d="M150 150L240 292H196Z" fill="#d6c58c"/>
+      <path d="M130 292L150 215L170 292Z" fill="#1e3a2f"/>
+      <path d="M150 150V112" stroke="#fff" stroke-width="3"/><path class="flag" d="M150 112l30 9-30 9Z" fill="#c4452e"/>
+      <defs><radialGradient id="gl"><stop offset="0" stop-color="#f08a24" stop-opacity=".5"/><stop offset="1" stop-color="#f08a24" stop-opacity="0"/></radialGradient></defs><circle class="glow" cx="315" cy="268" r="85" fill="url(#gl)"/><path d="M249 292q0 -26 9 -26q9 0 9 26z" fill="#3b6ea5"/><circle cx="258" cy="258" r="7.5" fill="#f1c9a0"/><path d="M250 256a8 8 0 0 1 16 0z" fill="#1e3a2f"/><path d="M253 267h10l-5 9z" fill="#f2c230"/><path d="M367 292q0 -26 9 -26q9 0 9 26z" fill="#3b6ea5"/><circle cx="376" cy="258" r="7.5" fill="#f1c9a0"/><path d="M368 256a8 8 0 0 1 16 0z" fill="#1e3a2f"/><path d="M371 267h10l-5 9z" fill="#f2c230"/><g class="stick" style="transform-origin:370px 272px"><path d="M370 272L334 262" stroke="#f1c9a0" stroke-width="3.5" stroke-linecap="round"/><path d="M360 269L326 270" stroke="#6b4a2a" stroke-width="2"/><circle cx="326" cy="270" r="3.5" fill="#fff"/></g><path d="M21 292q0 -34 9 -34q9 0 9 34z" fill="#3b6ea5"/><circle cx="30" cy="250" r="7.5" fill="#f1c9a0"/><path d="M22 248a8 8 0 0 1 16 0z" fill="#1e3a2f"/><path d="M25 259h10l-5 9z" fill="#f2c230"/><g class="waver" style="transform-origin:37px 268px"><path d="M37 268L48 248" stroke="#f1c9a0" stroke-width="3.5" stroke-linecap="round"/></g><path d="M290 292l50-12M340 292l-50-12" stroke="#6b4a2a" stroke-width="8" stroke-linecap="round"/>
+      <path class="flame" d="M315 284C294 260 308 244 315 214C322 244 336 260 315 284Z" fill="#f08a24"/>
+      <path class="flame f2" d="M315 282C305 268 311 258 315 242C319 258 325 268 315 282Z" fill="#f2c230"/>
+      <circle class="spark" cx="312" cy="228" r="2.5"/><circle class="spark b" cx="318" cy="228" r="2"/><circle class="spark c" cx="315" cy="228" r="2.5"/><circle class="spark d" cx="310" cy="228" r="1.8"/>
     </svg>
   </div>
 
