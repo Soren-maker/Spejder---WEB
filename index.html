@@ -273,13 +273,19 @@ footer{position:relative}
 .sc{position:absolute;bottom:26px;height:auto;pointer-events:none;width:clamp(150px,30vw,380px)}
 .sc.l{left:max(.5vw,calc((100vw - 1120px)/2 - 60px))}
 .sc.r{right:max(.5vw,calc((100vw - 1120px)/2 - 60px))}
-.peck{transform-origin:196px 122px;animation:peck 2.6s infinite}
-@keyframes peck{0%,55%,100%{transform:rotate(0)}60%,70%,80%{transform:rotate(-9deg)}65%,75%,85%{transform:rotate(1deg)}}
 .canopy{transform-box:fill-box;transform-origin:bottom center;animation:sway 5s ease-in-out infinite alternate}
-.steam{animation:steam 2.4s ease-out infinite;opacity:0;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round}
-@keyframes steam{0%{opacity:0;transform:translateY(4px)}30%{opacity:.8}100%{opacity:0;transform:translateY(-16px)}}
 .flap{transform-box:fill-box;transform-origin:top center;animation:flapx 3s ease-in-out infinite alternate}
 @keyframes flapx{to{transform:scaleX(.93)}}
+.pecker{animation:peck 2.6s infinite}
+@keyframes peck{0%,52%,100%{transform:translateX(6px)}56%,64%,72%,80%{transform:translateX(0)}60%,68%,76%,84%{transform:translateX(6px)}}
+.chip{opacity:0;animation:chip 2.6s infinite}
+@keyframes chip{0%,55%{opacity:0;transform:translate(0,0)}57%{opacity:1}70%{opacity:0;transform:translate(var(--cx),var(--cy))}100%{opacity:0}}
+.lamp{animation:lamp 1.8s ease-in-out infinite alternate}
+@keyframes lamp{to{opacity:.7}}
+.hog{animation:hog 2.4s ease-in-out infinite alternate}
+@keyframes hog{to{transform:translateY(-1.5px)}}
+.nose{animation:sniff .6s ease-in-out infinite alternate}
+@keyframes sniff{to{transform:translateX(-1.2px)}}
 </style>
 </head>
 <body>
@@ -436,28 +442,32 @@ footer{position:relative}
   
     <svg class="sc l" viewBox="0 0 380 230" aria-hidden="true">
       <defs><radialGradient id="gl2"><stop offset="0" stop-color="#e8501f" stop-opacity=".45"/><stop offset="1" stop-color="#e8501f" stop-opacity="0"/></radialGradient></defs>
-      <path d="M15 230L110 70L205 230Z" fill="#e2652d"/><path d="M15 230L110 70L98 230Z" fill="#c9501f"/>
-      <path d="M70 230L110 125L150 230Z" fill="#f7b265"/><path class="flap" d="M92 230L110 150L128 230Z" fill="#1e3a2f"/>
-      <path d="M110 70V48" stroke="#1e3a2f" stroke-width="3"/>
-      <circle class="glow" cx="268" cy="205" r="80" fill="url(#gl2)"/>
-      <path d="M238 228l60-12M298 228l-60-12" stroke="#6b4a2a" stroke-width="8" stroke-linecap="round"/>
-      <path class="flame" d="M268 222C247 198 261 182 268 152C275 182 289 198 268 222Z" fill="#e8501f"/>
-      <path class="flame f2" d="M268 220C258 206 264 196 268 182C272 196 278 206 268 220Z" fill="#ffd36b"/>
-      <rect x="302" y="208" width="16" height="16" rx="3" fill="#c4452e"/><path d="M318 212q7 0 7 6t-7 4" stroke="#c4452e" stroke-width="3" fill="none"/>
-      <path class="steam" d="M306 204q-5-7 0-13"/><path class="steam" style="animation-delay:-1.2s" d="M314 204q-5-7 0-13"/>
-      <ellipse cx="352" cy="222" rx="26" ry="26" fill="#1f6e44"/>
-      <ellipse class="ear" cx="346" cy="192" rx="5" ry="17" fill="#f4a6a0"/><ellipse class="ear" style="animation-delay:-2.2s" cx="358" cy="190" rx="5" ry="17" fill="#f4a6a0"/>
+      <path d="M64 160L6 226M156 160L214 226" stroke="#6b4a2a" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <path d="M20 228L110 90L200 228Z" fill="#2c5a47"/><path d="M110 90L200 228H110Z" fill="#234a3a"/>
+      <path d="M20 228L110 90L200 228" fill="none" stroke="#f7e7b0" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M88 228L110 150L132 228Z" fill="#f7e7b0"/><path class="flap" d="M98 228L110 168L122 228Z" fill="#1e3a2f"/>
+      <path d="M110 90V60" stroke="#1e3a2f" stroke-width="3"/><path class="flag" d="M110 60l26 8-26 8Z" fill="#c4452e"/>
+      <circle class="glow" cx="270" cy="205" r="80" fill="url(#gl2)"/>
+      <ellipse cx="270" cy="227" rx="34" ry="7" fill="none" stroke="#8a8f8c" stroke-width="7" stroke-dasharray="9 5"/>
+      <path d="M248 224l44-8M292 224l-44-8" stroke="#6b4a2a" stroke-width="7" stroke-linecap="round"/>
+      <path class="flame" d="M270 222C249 198 263 182 270 152C277 182 291 198 270 222Z" fill="#e8501f"/>
+      <path class="flame f2" d="M270 220C260 206 266 196 270 182C274 196 280 206 270 220Z" fill="#ffd36b"/>
+      <rect x="306" y="212" width="40" height="16" rx="8" fill="#9b6b3a"/><ellipse cx="346" cy="220" rx="4" ry="8" fill="#d9a566"/>
+      <g class="lamp"><path d="M318 190q4-8 8 0" fill="none" stroke="#1e3a2f" stroke-width="2"/><rect x="316" y="190" width="12" height="20" rx="2" fill="#fff3b0" stroke="#1e3a2f" stroke-width="2"/></g>
+      <g class="hog"><path d="M340 228a19 14 0 0 1 38 0z" fill="#6b4a2a"/><path d="M345 221l-5-5M351 216l-3-6M358 213l-1-6M366 213l2-6M372 217l4-5M376 223l5-3" stroke="#3d2a17" stroke-width="2" stroke-linecap="round"/><circle cx="339" cy="224" r="6" fill="#e0b98a"/><circle class="nose" cx="333" cy="225" r="2" fill="#1e3a2f"/><circle cx="338" cy="222" r="1" fill="#1e3a2f"/></g>
     </svg>
     <svg class="sc r" viewBox="0 0 380 270" aria-hidden="true">
-      <rect x="286" y="130" width="28" height="140" fill="#4b8fc0"/>
-      <g class="canopy"><ellipse cx="300" cy="100" rx="66" ry="50" fill="#4fae6a"/><ellipse cx="300" cy="91" rx="42" ry="34" fill="#1f6e44"/></g>
-      <rect x="150" y="72" width="44" height="198" fill="#4b8fc0"/>
-      <ellipse cx="172" cy="72" rx="26" ry="11" fill="#e8801a"/><ellipse cx="172" cy="72" rx="12" ry="5" fill="none" stroke="#fff" stroke-width="2"/>
-      <path d="M150 140q22 8 44 0M150 195q22 8 44 0" stroke="#2f6a96" stroke-width="2" fill="none"/>
-      <path d="M150 160l-34-22" stroke="#4b8fc0" stroke-width="12" stroke-linecap="round"/><ellipse cx="108" cy="134" rx="10" ry="6" transform="rotate(-30 108 134)" fill="#2f8f5a"/>
-      <path d="M194 205l30-20" stroke="#4b8fc0" stroke-width="12" stroke-linecap="round"/><ellipse cx="232" cy="182" rx="10" ry="6" transform="rotate(-30 232 182)" fill="#2f8f5a"/>
-      <g class="peck"><ellipse cx="203" cy="130" rx="8" ry="20" fill="#f08a24"/><path d="M199 148l-7 20 12-7z" fill="#1e3a2f"/><circle cx="204" cy="104" r="9" fill="#c4452e"/><path d="M212 103l13 3-13 5z" fill="#1e3a2f"/><circle cx="206" cy="102" r="1.8" fill="#fff"/><ellipse cx="200" cy="130" rx="4" ry="13" fill="#1e3a2f"/></g>
-      <ellipse cx="240" cy="262" rx="85" ry="36" fill="#1f6e44"/><ellipse cx="110" cy="266" rx="75" ry="30" fill="#2f8f5a"/>
+      <g class="canopy"><path d="M312 70L267 135H357Z" fill="#2f8f5a"/><path d="M312 100L257 180H367Z" fill="#1f6e44"/><path d="M312 138L247 228H377Z" fill="#2f8f5a"/><rect x="306" y="226" width="12" height="40" fill="#6b4a2a"/></g>
+      <rect x="150" y="60" width="36" height="210" fill="#f1ead6"/><rect x="170" y="60" width="16" height="210" fill="#e3dac0"/>
+      <path d="M150 100h14M172 132h14M150 168h12M174 202h12M152 238h14" stroke="#2b2b2b" stroke-width="3" stroke-linecap="round"/>
+      <path d="M186 86l28-18M150 152l-26-16" stroke="#f1ead6" stroke-width="8" stroke-linecap="round"/>
+      <ellipse cx="222" cy="64" rx="13" ry="7" transform="rotate(-30 222 64)" fill="#6fbf5a"/><ellipse cx="116" cy="130" rx="13" ry="7" transform="rotate(-25 116 130)" fill="#6fbf5a"/>
+      <g class="canopy"><ellipse cx="168" cy="52" rx="74" ry="34" fill="#8fcf6b"/><ellipse cx="146" cy="42" rx="40" ry="22" fill="#6fbf5a"/><ellipse cx="192" cy="46" rx="36" ry="20" fill="#6fbf5a"/></g>
+      <g transform="translate(-6 0)"><path d="M199 128h-13M199 142h-13" stroke="#1e3a2f" stroke-width="2" stroke-linecap="round"/>
+      <path d="M204 150L188 172l17-4z" fill="#1e3a2f"/><ellipse cx="206" cy="134" rx="8" ry="19" fill="#1e3a2f"/><ellipse cx="208" cy="136" rx="4" ry="13" fill="#f5efe0"/><ellipse cx="204" cy="130" rx="3" ry="8" fill="#fff"/>
+      <g class="pecker"><circle cx="203" cy="108" r="8.5" fill="#f5efe0"/><path d="M194.5 106a8.5 8.5 0 0 1 17 0z" fill="#c4452e"/><circle cx="200" cy="109" r="1.6" fill="#1e3a2f"/><path d="M195 107L187 109.5L195 112Z" fill="#1e3a2f"/></g></g>
+      <g fill="#c9a46a"><circle class="chip" style="--cx:14px;--cy:-14px" cx="185" cy="109" r="1.8"/><circle class="chip" style="--cx:20px;--cy:4px;animation-delay:.2s" cx="185" cy="110" r="1.5"/><circle class="chip" style="--cx:10px;--cy:-22px;animation-delay:.4s" cx="185" cy="108" r="1.7"/></g>
+      <ellipse cx="240" cy="262" rx="80" ry="34" fill="#1f6e44"/><ellipse cx="110" cy="266" rx="70" ry="30" fill="#2f8f5a"/>
     </svg>
     </section>
 </main>
